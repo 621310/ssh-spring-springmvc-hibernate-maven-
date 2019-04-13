@@ -1,0 +1,15 @@
+2019-04-13 09:45:55,312 INFO MLog clients using log4j logging.
+2019-04-13 09:45:56,377 INFO Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-04-13 09:45:56,413 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge164a25nhu631mb78w2|46fa7c39] registered.
+2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 1
+2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 2
+2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 3
+2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 4
+2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 5
+2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 6
+2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 7
+2019-04-13 09:45:56,539 DEBUG incremented pending_acquires: 8
+2019-04-13 09:45:56,539 DEBUG incremented pending_acquires: 9
+2019-04-13 09:45:56,539 DEBUG incremented pending_acquires: 10
+2019-04-13 09:45:56,539 DEBUG com.mchange.v2.resourcepool.BasicResourcePool@54e1c68b config: [start -> 10; min -> 1; max -> 100; inc -> 10; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-04-13 09:45:56,540 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge164a25nhu631mb78w2|46fa7c39, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge164a25nhu631mb78w2|46fa7c39, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/ssh, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 20, maxStatementsPerConnection -> 5, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
