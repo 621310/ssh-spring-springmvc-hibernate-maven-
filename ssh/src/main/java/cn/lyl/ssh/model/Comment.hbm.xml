@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-4-14 14:27:16 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.lyl.ssh.model.Comment" table="COMMENT">
+        <id name="cid" type="java.lang.Integer">
+            <column name="CID" />
+            <generator class="native" />
+        </id>
+        <property name="con" type="java.lang.String">
+            <column name="CON" />
+        </property>
+        <property name="praiser" type="java.lang.Integer">
+            <column name="PRAISER" />
+        </property>
+        <many-to-one name="user" class="cn.lyl.ssh.model.User" fetch="join">
+            <column name="USERID" />
+        </many-to-one>
+        <many-to-one name="topic" class="cn.lyl.ssh.model.Topic" fetch="join">
+            <column name="TOPICID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

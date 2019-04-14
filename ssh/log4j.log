@@ -1,15 +1,1299 @@
-2019-04-13 09:45:55,312 INFO MLog clients using log4j logging.
-2019-04-13 09:45:56,377 INFO Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
-2019-04-13 09:45:56,413 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge164a25nhu631mb78w2|46fa7c39] registered.
-2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 1
-2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 2
-2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 3
-2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 4
-2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 5
-2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 6
-2019-04-13 09:45:56,538 DEBUG incremented pending_acquires: 7
-2019-04-13 09:45:56,539 DEBUG incremented pending_acquires: 8
-2019-04-13 09:45:56,539 DEBUG incremented pending_acquires: 9
-2019-04-13 09:45:56,539 DEBUG incremented pending_acquires: 10
-2019-04-13 09:45:56,539 DEBUG com.mchange.v2.resourcepool.BasicResourcePool@54e1c68b config: [start -> 10; min -> 1; max -> 100; inc -> 10; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
-2019-04-13 09:45:56,540 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge164a25nhu631mb78w2|46fa7c39, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge164a25nhu631mb78w2|46fa7c39, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/ssh, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 20, maxStatementsPerConnection -> 5, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-14 19:58:16,376 INFO MLog clients using log4j logging.
+2019-04-14 19:58:16,664 INFO Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-04-14 19:58:16,679 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge164a27ot6c54fi4gp|1a75e76a] registered.
+2019-04-14 19:58:16,935 DEBUG Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-04-14 19:58:16,946 DEBUG Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-04-14 19:58:16,947 DEBUG Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-04-14 19:58:16,950 DEBUG Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-04-14 19:58:17,019 INFO HHH000412: Hibernate Core {5.3.7.Final}
+2019-04-14 19:58:17,022 INFO HHH000206: hibernate.properties not found
+2019-04-14 19:58:17,153 DEBUG Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+2019-04-14 19:58:17,155 WARN HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-04-14 19:58:17,155 DEBUG Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2019-04-14 19:58:17,158 DEBUG cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2019-04-14 19:58:17,275 DEBUG Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2019-04-14 19:58:17,275 WARN HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-04-14 19:58:17,275 DEBUG Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2019-04-14 19:58:17,287 DEBUG Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2019-04-14 19:58:18,017 DEBUG Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2019-04-14 19:58:18,017 WARN HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-04-14 19:58:18,017 DEBUG Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2019-04-14 19:58:18,023 DEBUG Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2019-04-14 19:58:18,026 DEBUG Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2019-04-14 19:58:18,027 WARN HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-04-14 19:58:18,027 DEBUG Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2019-04-14 19:58:18,030 DEBUG Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2019-04-14 19:58:18,036 DEBUG Building session factory using internal StandardServiceRegistryBuilder
+2019-04-14 19:58:18,042 DEBUG Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-04-14 19:58:18,042 DEBUG Building session factory using provided StandardServiceRegistry
+2019-04-14 19:58:18,054 DEBUG Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2019-04-14 19:58:18,055 DEBUG Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-04-14 19:58:18,076 INFO HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-14 19:58:18,109 DEBUG Adding type registration boolean -> org.hibernate.type.BooleanType@3e6f3bae
+2019-04-14 19:58:18,110 DEBUG Adding type registration boolean -> org.hibernate.type.BooleanType@3e6f3bae
+2019-04-14 19:58:18,110 DEBUG Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3e6f3bae
+2019-04-14 19:58:18,110 DEBUG Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@73d69c0f
+2019-04-14 19:58:18,111 DEBUG Adding type registration true_false -> org.hibernate.type.TrueFalseType@4a31c2ee
+2019-04-14 19:58:18,111 DEBUG Adding type registration yes_no -> org.hibernate.type.YesNoType@31ff1390
+2019-04-14 19:58:18,112 DEBUG Adding type registration byte -> org.hibernate.type.ByteType@aed0151
+2019-04-14 19:58:18,112 DEBUG Adding type registration byte -> org.hibernate.type.ByteType@aed0151
+2019-04-14 19:58:18,112 DEBUG Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@aed0151
+2019-04-14 19:58:18,113 DEBUG Adding type registration character -> org.hibernate.type.CharacterType@2160e52a
+2019-04-14 19:58:18,113 DEBUG Adding type registration char -> org.hibernate.type.CharacterType@2160e52a
+2019-04-14 19:58:18,114 DEBUG Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2160e52a
+2019-04-14 19:58:18,115 DEBUG Adding type registration short -> org.hibernate.type.ShortType@6b410923
+2019-04-14 19:58:18,115 DEBUG Adding type registration short -> org.hibernate.type.ShortType@6b410923
+2019-04-14 19:58:18,115 DEBUG Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6b410923
+2019-04-14 19:58:18,116 DEBUG Adding type registration integer -> org.hibernate.type.IntegerType@53667cbe
+2019-04-14 19:58:18,116 DEBUG Adding type registration int -> org.hibernate.type.IntegerType@53667cbe
+2019-04-14 19:58:18,116 DEBUG Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@53667cbe
+2019-04-14 19:58:18,117 DEBUG Adding type registration long -> org.hibernate.type.LongType@2873d672
+2019-04-14 19:58:18,117 DEBUG Adding type registration long -> org.hibernate.type.LongType@2873d672
+2019-04-14 19:58:18,117 DEBUG Adding type registration java.lang.Long -> org.hibernate.type.LongType@2873d672
+2019-04-14 19:58:18,118 DEBUG Adding type registration float -> org.hibernate.type.FloatType@779de014
+2019-04-14 19:58:18,119 DEBUG Adding type registration float -> org.hibernate.type.FloatType@779de014
+2019-04-14 19:58:18,119 DEBUG Adding type registration java.lang.Float -> org.hibernate.type.FloatType@779de014
+2019-04-14 19:58:18,120 DEBUG Adding type registration double -> org.hibernate.type.DoubleType@1450078a
+2019-04-14 19:58:18,120 DEBUG Adding type registration double -> org.hibernate.type.DoubleType@1450078a
+2019-04-14 19:58:18,120 DEBUG Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1450078a
+2019-04-14 19:58:18,121 DEBUG Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6719a5b8
+2019-04-14 19:58:18,121 DEBUG Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6719a5b8
+2019-04-14 19:58:18,122 DEBUG Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4e558728
+2019-04-14 19:58:18,122 DEBUG Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4e558728
+2019-04-14 19:58:18,123 DEBUG Adding type registration string -> org.hibernate.type.StringType@5c089b2f
+2019-04-14 19:58:18,123 DEBUG Adding type registration java.lang.String -> org.hibernate.type.StringType@5c089b2f
+2019-04-14 19:58:18,124 DEBUG Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7ed9ae94
+2019-04-14 19:58:18,124 DEBUG Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2bc12da
+2019-04-14 19:58:18,125 DEBUG Adding type registration url -> org.hibernate.type.UrlType@6fe46b62
+2019-04-14 19:58:18,125 DEBUG Adding type registration java.net.URL -> org.hibernate.type.UrlType@6fe46b62
+2019-04-14 19:58:18,127 DEBUG Adding type registration Duration -> org.hibernate.type.DurationType@17ca8b92
+2019-04-14 19:58:18,127 DEBUG Adding type registration java.time.Duration -> org.hibernate.type.DurationType@17ca8b92
+2019-04-14 19:58:18,136 DEBUG Adding type registration Instant -> org.hibernate.type.InstantType@67207d8a
+2019-04-14 19:58:18,137 DEBUG Adding type registration java.time.Instant -> org.hibernate.type.InstantType@67207d8a
+2019-04-14 19:58:18,138 DEBUG Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@375b5b7f
+2019-04-14 19:58:18,138 DEBUG Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@375b5b7f
+2019-04-14 19:58:18,139 DEBUG Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5173200b
+2019-04-14 19:58:18,139 DEBUG Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5173200b
+2019-04-14 19:58:18,140 DEBUG Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@6331250e
+2019-04-14 19:58:18,140 DEBUG Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@6331250e
+2019-04-14 19:58:18,142 DEBUG Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7c2327fa
+2019-04-14 19:58:18,142 DEBUG Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7c2327fa
+2019-04-14 19:58:18,143 DEBUG Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3605c4d3
+2019-04-14 19:58:18,143 DEBUG Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3605c4d3
+2019-04-14 19:58:18,146 DEBUG Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@732bb66d
+2019-04-14 19:58:18,147 DEBUG Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@732bb66d
+2019-04-14 19:58:18,148 DEBUG Adding type registration date -> org.hibernate.type.DateType@1517f633
+2019-04-14 19:58:18,148 DEBUG Adding type registration java.sql.Date -> org.hibernate.type.DateType@1517f633
+2019-04-14 19:58:18,149 DEBUG Adding type registration time -> org.hibernate.type.TimeType@a0a9fa5
+2019-04-14 19:58:18,149 DEBUG Adding type registration java.sql.Time -> org.hibernate.type.TimeType@a0a9fa5
+2019-04-14 19:58:18,150 DEBUG Adding type registration timestamp -> org.hibernate.type.TimestampType@3fbfa96
+2019-04-14 19:58:18,150 DEBUG Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3fbfa96
+2019-04-14 19:58:18,150 DEBUG Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3fbfa96
+2019-04-14 19:58:18,152 DEBUG Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@710d7aff
+2019-04-14 19:58:18,153 DEBUG Adding type registration calendar -> org.hibernate.type.CalendarType@6d367020
+2019-04-14 19:58:18,153 DEBUG Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6d367020
+2019-04-14 19:58:18,153 DEBUG Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6d367020
+2019-04-14 19:58:18,153 DEBUG Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6a74d228
+2019-04-14 19:58:18,154 DEBUG Adding type registration locale -> org.hibernate.type.LocaleType@2e3a5237
+2019-04-14 19:58:18,154 DEBUG Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@2e3a5237
+2019-04-14 19:58:18,155 DEBUG Adding type registration currency -> org.hibernate.type.CurrencyType@2d0bfb24
+2019-04-14 19:58:18,155 DEBUG Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2d0bfb24
+2019-04-14 19:58:18,156 DEBUG Adding type registration timezone -> org.hibernate.type.TimeZoneType@4905c46b
+2019-04-14 19:58:18,156 DEBUG Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4905c46b
+2019-04-14 19:58:18,157 DEBUG Adding type registration class -> org.hibernate.type.ClassType@66434cc8
+2019-04-14 19:58:18,157 DEBUG Adding type registration java.lang.Class -> org.hibernate.type.ClassType@66434cc8
+2019-04-14 19:58:18,158 DEBUG Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@75f2099
+2019-04-14 19:58:18,158 DEBUG Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@75f2099
+2019-04-14 19:58:18,159 DEBUG Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@29182679
+2019-04-14 19:58:18,161 DEBUG Adding type registration binary -> org.hibernate.type.BinaryType@5183d589
+2019-04-14 19:58:18,161 DEBUG Adding type registration byte[] -> org.hibernate.type.BinaryType@5183d589
+2019-04-14 19:58:18,161 DEBUG Adding type registration [B -> org.hibernate.type.BinaryType@5183d589
+2019-04-14 19:58:18,162 DEBUG Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@5328a9c1
+2019-04-14 19:58:18,162 DEBUG Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@5328a9c1
+2019-04-14 19:58:18,162 DEBUG Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@5328a9c1
+2019-04-14 19:58:18,163 DEBUG Adding type registration row_version -> org.hibernate.type.RowVersionType@1b9c1b51
+2019-04-14 19:58:18,164 DEBUG Adding type registration image -> org.hibernate.type.ImageType@3e9803c2
+2019-04-14 19:58:18,164 DEBUG Adding type registration characters -> org.hibernate.type.CharArrayType@bd2f5a9
+2019-04-14 19:58:18,165 DEBUG Adding type registration char[] -> org.hibernate.type.CharArrayType@bd2f5a9
+2019-04-14 19:58:18,165 DEBUG Adding type registration [C -> org.hibernate.type.CharArrayType@bd2f5a9
+2019-04-14 19:58:18,165 DEBUG Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6d91790b
+2019-04-14 19:58:18,166 DEBUG Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6d91790b
+2019-04-14 19:58:18,166 DEBUG Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6d91790b
+2019-04-14 19:58:18,166 DEBUG Adding type registration text -> org.hibernate.type.TextType@6ce90bc5
+2019-04-14 19:58:18,167 DEBUG Adding type registration ntext -> org.hibernate.type.NTextType@6f8f8a80
+2019-04-14 19:58:18,168 DEBUG Adding type registration blob -> org.hibernate.type.BlobType@7004e3d
+2019-04-14 19:58:18,168 DEBUG Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@7004e3d
+2019-04-14 19:58:18,169 DEBUG Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@588ffeb
+2019-04-14 19:58:18,170 DEBUG Adding type registration clob -> org.hibernate.type.ClobType@34cf5a97
+2019-04-14 19:58:18,170 DEBUG Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@34cf5a97
+2019-04-14 19:58:18,171 DEBUG Adding type registration nclob -> org.hibernate.type.NClobType@6443b128
+2019-04-14 19:58:18,172 DEBUG Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6443b128
+2019-04-14 19:58:18,172 DEBUG Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4a1c0752
+2019-04-14 19:58:18,173 DEBUG Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4bdcaf36
+2019-04-14 19:58:18,175 DEBUG Adding type registration serializable -> org.hibernate.type.SerializableType@5d39f2d8
+2019-04-14 19:58:18,179 DEBUG Adding type registration object -> org.hibernate.type.ObjectType@5c20ffa8
+2019-04-14 19:58:18,179 DEBUG Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@5c20ffa8
+2019-04-14 19:58:18,179 DEBUG Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1d4664d7
+2019-04-14 19:58:18,179 DEBUG Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@46c00568
+2019-04-14 19:58:18,179 DEBUG Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@56ccd751
+2019-04-14 19:58:18,179 DEBUG Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@458544e0
+2019-04-14 19:58:18,180 DEBUG Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6bcbf05b
+2019-04-14 19:58:18,180 DEBUG Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@2d66530f
+2019-04-14 19:58:18,180 DEBUG Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1d207fad
+2019-04-14 19:58:18,180 DEBUG Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@72ed9aad
+2019-04-14 19:58:18,210 DEBUG Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2019-04-14 19:58:18,210 DEBUG Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2019-04-14 19:58:18,211 DEBUG Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2019-04-14 19:58:18,211 DEBUG Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2019-04-14 19:58:18,212 DEBUG Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2019-04-14 19:58:18,213 DEBUG Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2019-04-14 19:58:18,213 DEBUG Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2019-04-14 19:58:18,214 DEBUG Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-04-14 19:58:18,215 DEBUG Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2019-04-14 19:58:18,216 DEBUG Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019-04-14 19:58:18,216 DEBUG Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019-04-14 19:58:18,217 DEBUG Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019-04-14 19:58:18,217 DEBUG Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-04-14 19:58:18,218 DEBUG Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2019-04-14 19:58:18,263 DEBUG incremented pending_acquires: 1
+2019-04-14 19:58:18,263 DEBUG incremented pending_acquires: 2
+2019-04-14 19:58:18,263 DEBUG incremented pending_acquires: 3
+2019-04-14 19:58:18,264 DEBUG incremented pending_acquires: 4
+2019-04-14 19:58:18,264 DEBUG incremented pending_acquires: 5
+2019-04-14 19:58:18,264 DEBUG incremented pending_acquires: 6
+2019-04-14 19:58:18,264 DEBUG incremented pending_acquires: 7
+2019-04-14 19:58:18,264 DEBUG incremented pending_acquires: 8
+2019-04-14 19:58:18,264 DEBUG incremented pending_acquires: 9
+2019-04-14 19:58:18,264 DEBUG incremented pending_acquires: 10
+2019-04-14 19:58:18,264 DEBUG com.mchange.v2.resourcepool.BasicResourcePool@383790cf config: [start -> 10; min -> 1; max -> 100; inc -> 10; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-04-14 19:58:18,264 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge164a27ot6c54fi4gp|1a75e76a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge164a27ot6c54fi4gp|1a75e76a, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/ssh, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 20, maxStatementsPerConnection -> 5, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-14 19:58:18,264 DEBUG acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2019-04-14 19:58:18,265 DEBUG awaitAvailable(): [unknown]
+2019-04-14 19:58:18,265 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 0, unused: 0, excluded: 0]
+2019-04-14 19:58:18,523 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,523 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,523 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,523 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,523 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,523 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,524 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 1, unused: 1, excluded: 0]
+2019-04-14 19:58:18,524 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,524 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,524 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,524 DEBUG decremented pending_acquires: 9
+2019-04-14 19:58:18,524 DEBUG decremented pending_acquires: 8
+2019-04-14 19:58:18,525 DEBUG decremented pending_acquires: 7
+2019-04-14 19:58:18,529 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,529 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,529 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,529 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,529 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,529 DEBUG decremented pending_acquires: 6
+2019-04-14 19:58:18,530 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,530 DEBUG decremented pending_acquires: 5
+2019-04-14 19:58:18,536 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,536 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,536 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,536 DEBUG decremented pending_acquires: 4
+2019-04-14 19:58:18,540 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,540 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,540 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,540 DEBUG decremented pending_acquires: 3
+2019-04-14 19:58:18,542 DEBUG Database ->
+       name : MySQL
+    version : 5.5.50
+      major : 5
+      minor : 5
+2019-04-14 19:58:18,542 DEBUG Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
+      major : 5
+      minor : 1
+2019-04-14 19:58:18,542 DEBUG JDBC version : 4.0
+2019-04-14 19:58:18,544 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,545 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,545 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,545 DEBUG decremented pending_acquires: 2
+2019-04-14 19:58:18,547 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,547 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,547 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,547 DEBUG decremented pending_acquires: 1
+2019-04-14 19:58:18,549 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,549 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@104594b8.acquireResource() returning. 
+2019-04-14 19:58:18,549 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,549 DEBUG decremented pending_acquires: 0
+2019-04-14 19:58:18,561 INFO HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-04-14 19:58:18,597 DEBUG Unable to use Java 1.7 Connection#getSchema
+2019-04-14 19:58:18,598 DEBUG Unable to resolve connection default schema
+org.hibernate.HibernateException: Use of DefaultSchemaNameResolver requires Dialect to provide the proper SQL statement/command but provided Dialect [org.hibernate.dialect.MySQL5InnoDBDialect] did not return anything from Dialect#getCurrentSchemaCommand
+	at org.hibernate.engine.jdbc.env.internal.DefaultSchemaNameResolver$SchemaNameResolverFallbackDelegate.resolveSchemaName(DefaultSchemaNameResolver.java:100)
+	at org.hibernate.engine.jdbc.env.internal.DefaultSchemaNameResolver.resolveSchemaName(DefaultSchemaNameResolver.java:76)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.determineCurrentSchemaName(JdbcEnvironmentImpl.java:298)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:232)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:84)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:474)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:85)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:689)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85)
+	at cn.lyl.ssh.test.test.test(test.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+2019-04-14 19:58:18,602 DEBUG JDBC driver metadata reported database stores quoted identifiers in more than one case
+2019-04-14 19:58:18,603 DEBUG IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2019-04-14 19:58:18,610 INFO HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-14 19:58:18,610 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,611 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:18,611 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:18,618 DEBUG Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2019-04-14 19:58:18,621 DEBUG Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6a2eea2a] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@b967222]
+2019-04-14 19:58:18,742 DEBUG Mapping class: cn.lyl.ssh.model.Comment -> COMMENT
+2019-04-14 19:58:18,747 DEBUG Mapped property: cid -> [CID]
+2019-04-14 19:58:18,748 DEBUG Forcing column [cid] to be non-null as it is part of the primary key for table [comment]
+2019-04-14 19:58:18,749 DEBUG Mapped property: con -> [CON]
+2019-04-14 19:58:18,749 DEBUG Mapped property: praiser -> [PRAISER]
+2019-04-14 19:58:18,753 DEBUG Mapped property: user -> [USERID]
+2019-04-14 19:58:18,753 DEBUG Mapped property: topic -> [TOPICID]
+2019-04-14 19:58:18,753 DEBUG Mapping class: cn.lyl.ssh.model.Topic -> TOPIC
+2019-04-14 19:58:18,753 DEBUG Mapped property: pid -> [PID]
+2019-04-14 19:58:18,754 DEBUG Forcing column [pid] to be non-null as it is part of the primary key for table [topic]
+2019-04-14 19:58:18,754 DEBUG Mapped property: content -> [CONTENT]
+2019-04-14 19:58:18,754 DEBUG Mapped property: praise -> [PRAISE]
+2019-04-14 19:58:18,754 DEBUG Mapped property: user -> [UserId]
+2019-04-14 19:58:18,754 DEBUG Mapping class: cn.lyl.ssh.model.User -> USER
+2019-04-14 19:58:18,754 DEBUG Mapped property: id -> [ID]
+2019-04-14 19:58:18,754 DEBUG Forcing column [id] to be non-null as it is part of the primary key for table [user]
+2019-04-14 19:58:18,754 DEBUG Mapped property: username -> [USERNAME]
+2019-04-14 19:58:18,754 DEBUG Mapped property: password -> [PASSWORD]
+2019-04-14 19:58:18,754 DEBUG Mapped property: sex -> [SEX]
+2019-04-14 19:58:18,754 DEBUG Mapped property: birthday -> [BIRTHDAY]
+2019-04-14 19:58:18,755 DEBUG Mapped property: img -> [IMG]
+2019-04-14 19:58:18,758 DEBUG Resolving reference to class: cn.lyl.ssh.model.User
+2019-04-14 19:58:18,760 DEBUG Resolving reference to class: cn.lyl.ssh.model.Topic
+2019-04-14 19:58:18,760 DEBUG Resolving reference to class: cn.lyl.ssh.model.User
+2019-04-14 19:58:18,761 DEBUG Resolving reference to class: cn.lyl.ssh.model.User
+2019-04-14 19:58:18,761 DEBUG Resolving reference to class: cn.lyl.ssh.model.Topic
+2019-04-14 19:58:18,761 DEBUG Resolving reference to class: cn.lyl.ssh.model.User
+2019-04-14 19:58:18,790 DEBUG Building session factory
+2019-04-14 19:58:18,791 DEBUG SessionFactory name : null
+2019-04-14 19:58:18,791 DEBUG Automatic flush during beforeCompletion(): enabled
+2019-04-14 19:58:18,791 DEBUG Automatic session close at end of transaction: disabled
+2019-04-14 19:58:18,791 DEBUG Statistics: disabled
+2019-04-14 19:58:18,791 DEBUG Deleted entity synthetic identifier rollback: disabled
+2019-04-14 19:58:18,791 DEBUG Default entity-mode: pojo
+2019-04-14 19:58:18,791 DEBUG Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2019-04-14 19:58:18,791 DEBUG Allow initialization of lazy state outside session : disabled
+2019-04-14 19:58:18,791 DEBUG Using BatchFetchStyle : LEGACY
+2019-04-14 19:58:18,792 DEBUG Default batch fetch size: -1
+2019-04-14 19:58:18,792 DEBUG Maximum outer join fetch depth: 2
+2019-04-14 19:58:18,792 DEBUG Default null ordering: NONE
+2019-04-14 19:58:18,792 DEBUG Order SQL updates by primary key: disabled
+2019-04-14 19:58:18,792 DEBUG Order SQL inserts for batching: disabled
+2019-04-14 19:58:18,792 DEBUG multi-tenancy strategy : NONE
+2019-04-14 19:58:18,792 DEBUG JTA Track by Thread: enabled
+2019-04-14 19:58:18,792 DEBUG Query language substitutions: {}
+2019-04-14 19:58:18,792 DEBUG Named query checking : enabled
+2019-04-14 19:58:18,792 DEBUG Second-level cache: disabled
+2019-04-14 19:58:18,792 DEBUG Second-level query cache: disabled
+2019-04-14 19:58:18,792 DEBUG Second-level query cache factory: null
+2019-04-14 19:58:18,792 DEBUG Second-level cache region prefix: null
+2019-04-14 19:58:18,792 DEBUG Optimize second-level cache for minimal puts: disabled
+2019-04-14 19:58:18,792 DEBUG Structured second-level cache entries: disabled
+2019-04-14 19:58:18,792 DEBUG Second-level cache direct-reference entries: disabled
+2019-04-14 19:58:18,792 DEBUG Automatic eviction of collection cache: disabled
+2019-04-14 19:58:18,792 DEBUG JDBC batch size: 15
+2019-04-14 19:58:18,792 DEBUG JDBC batch updates for versioned data: enabled
+2019-04-14 19:58:18,792 DEBUG Scrollable result sets: enabled
+2019-04-14 19:58:18,792 DEBUG Wrap result sets: disabled
+2019-04-14 19:58:18,792 DEBUG JDBC3 getGeneratedKeys(): enabled
+2019-04-14 19:58:18,792 DEBUG JDBC result set fetch size: null
+2019-04-14 19:58:18,792 DEBUG Connection release mode: ON_CLOSE
+2019-04-14 19:58:18,792 DEBUG Generate SQL with comments: disabled
+2019-04-14 19:58:18,793 DEBUG JPA compliance - query : 
+2019-04-14 19:58:18,793 DEBUG JPA compliance - closed-handling : 
+2019-04-14 19:58:18,793 DEBUG JPA compliance - lists : 
+2019-04-14 19:58:18,793 DEBUG JPA compliance - transactions : 
+2019-04-14 19:58:18,872 DEBUG Session factory constructed with filter configurations : {}
+2019-04-14 19:58:18,878 DEBUG Instantiating session factory with properties: {sun.desktop=windows, hibernate.format_sql=true, awt.toolkit=sun.awt.windows.WToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@7cb8437d, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.cpu.isalist=amd64, sun.jnu.encoding=GBK, hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect, java.class.path=C:\Users\20996\git\ssh\ssh\target\test-classes;C:\Users\20996\git\ssh\ssh\target\classes;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.jupiter.api_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.jupiter.engine_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.jupiter.migrationsupport_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.jupiter.params_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.commons_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.engine_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.launcher_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.runner_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.suite.api_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.vintage.engine_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.opentest4j_1.1.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.apiguardian_1.0.0.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit_4.12.0.v201504281640\junit.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\annotations-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina-ant.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina-ha.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina-storeconfig.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina-tribes.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\ecj-4.6.3.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\el-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\jasper-el.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\jasper.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\jaspic-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\jsp-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\servlet-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-coyote.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-dbcp.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-i18n-es.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-i18n-fr.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-i18n-ja.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-i18n-ru.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-jdbc.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-jni.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-util-scan.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-util.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-websocket.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\websocket-api.jar;C:\Users\20996\.m2\repository\org\springframework\spring-context\5.1.3.RELEASE\spring-context-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-aop\5.1.3.RELEASE\spring-aop-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-beans\5.1.3.RELEASE\spring-beans-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-core\5.1.3.RELEASE\spring-core-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-jcl\5.1.3.RELEASE\spring-jcl-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-expression\5.1.3.RELEASE\spring-expression-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-web\5.1.3.RELEASE\spring-web-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-webmvc\5.1.3.RELEASE\spring-webmvc-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\20996\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\20996\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar;C:\Users\20996\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;C:\Users\20996\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.1\javax.servlet.jsp-api-2.3.1.jar;C:\Users\20996\.m2\repository\org\springframework\spring-tx\5.1.3.RELEASE\spring-tx-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-aspects\5.1.3.RELEASE\spring-aspects-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\aspectj\aspectjweaver\1.9.2\aspectjweaver-1.9.2.jar;C:\Users\20996\.m2\repository\org\springframework\spring-orm\5.1.3.RELEASE\spring-orm-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-jdbc\5.1.3.RELEASE\spring-jdbc-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\hibernate\hibernate-core\5.3.7.Final\hibernate-core-5.3.7.Final.jar;C:\Users\20996\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\20996\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\20996\.m2\repository\org\javassist\javassist\3.23.1-GA\javassist-3.23.1-GA.jar;C:\Users\20996\.m2\repository\net\bytebuddy\byte-buddy\1.8.17\byte-buddy-1.8.17.jar;C:\Users\20996\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\20996\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\20996\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\20996\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\20996\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\20996\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\20996\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\20996\.m2\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;C:\Users\20996\.m2\repository\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar;C:\Users\20996\.m2\repository\javax\servlet\jsp\jsp-api\2.2\jsp-api-2.2.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\configuration\org.eclipse.osgi\305\0\.cp;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\configuration\org.eclipse.osgi\303\0\.cp, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Shanghai, os.name=Windows 10, java.vm.specification.version=1.8, user.country=CN, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jre1.8.0_192\bin, sun.java.command=org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 63244 -testLoaderClass org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader -loaderpluginname org.eclipse.jdt.junit5.runtime -test cn.lyl.ssh.test.test:test, sun.cpu.endian=little, user.home=C:\Users\20996, user.language=zh, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jre1.8.0_192, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, sun.boot.class.path=C:\Program Files\Java\jre1.8.0_192\lib\resources.jar;C:\Program Files\Java\jre1.8.0_192\lib\rt.jar;C:\Program Files\Java\jre1.8.0_192\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_192\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_192\lib\jce.jar;C:\Program Files\Java\jre1.8.0_192\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_192\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_192\classes, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_192-b12, user.name=20996, path.separator=;, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_192\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=GBK, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.classLoaders=[sun.misc.Launcher$AppClassLoader@6d03e736], hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\20996\AppData\Local\Temp\, java.version=1.8.0_192, user.dir=C:\Users\20996\git\ssh\ssh, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@62a4417, java.library.path=C:\Program Files\Java\jre1.8.0_192\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_192/bin/server;C:/Program Files/Java/jre1.8.0_192/bin;C:/Program Files/Java/jre1.8.0_192/lib/amd64;D:\liuyiling\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\³£ÓÃÈí¼þ°²×°Â·¾¶\Microsoft VS Code\bin;%JAVA_H;ME%\bin;C:\Program Files\Java\jdk1.8.0_192\jre\bin;D:\Javaliuyiling\apache-maven-3.6.0\bin;"D:\Javaliuyiling\apache-tomcat-8.5.38\lib;D:\Javaliuyiling\apache-tomcat-8.5.38\bin";C:\Program Files\Git\bin;D:\Python\Scripts\;D:\Python\;C:\Users\20996\AppData\Local\Microsoft\WindowsApps;D:\³£ÓÃÈí¼þ°²×°Â·¾¶\Microsoft VS Code\bin;C:\Users\20996\AppData\Local\GitHubDesktop\bin;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE;;., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.192-b12, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge164a27ot6c54fi4gp|1a75e76a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge164a27ot6c54fi4gp|1a75e76a, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/ssh, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 20, maxStatementsPerConnection -> 5, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ], java.ext.dirs=C:\Program Files\Java\jre1.8.0_192\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.io.unicode.encoding=UnicodeLittle, java.class.version=52.0}
+2019-04-14 19:58:18,892 DEBUG Skipping JACC integration as it was not enabled
+2019-04-14 19:58:18,893 DEBUG Instantiated session factory
+2019-04-14 19:58:18,893 DEBUG Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6a2eea2a] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@6b2e0f78]
+2019-04-14 19:58:18,937 DEBUG Not known whether passed class name [cn.lyl.ssh.model.Topic] is safe
+2019-04-14 19:58:18,937 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.Topic
+2019-04-14 19:58:18,956 DEBUG Not known whether passed class name [cn.lyl.ssh.model.Topic] is safe
+2019-04-14 19:58:18,956 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.Topic
+2019-04-14 19:58:19,154 DEBUG Not known whether passed class name [cn.lyl.ssh.model.Comment] is safe
+2019-04-14 19:58:19,154 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.Comment
+2019-04-14 19:58:19,154 DEBUG Not known whether passed class name [cn.lyl.ssh.model.Comment] is safe
+2019-04-14 19:58:19,154 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.Comment
+2019-04-14 19:58:19,169 DEBUG Not known whether passed class name [cn.lyl.ssh.model.User] is safe
+2019-04-14 19:58:19,169 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.User
+2019-04-14 19:58:19,169 DEBUG Not known whether passed class name [cn.lyl.ssh.model.User] is safe
+2019-04-14 19:58:19,169 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.User
+2019-04-14 19:58:19,187 DEBUG Static SQL for entity: cn.lyl.ssh.model.Topic
+2019-04-14 19:58:19,188 DEBUG  Version select: select PID from TOPIC where PID =?
+2019-04-14 19:58:19,188 DEBUG  Snapshot select: select topic_.PID, topic_.CONTENT as CONTENT2_1_, topic_.PRAISE as PRAISE3_1_, topic_.UserId as UserId4_1_ from TOPIC topic_ where topic_.PID=?
+2019-04-14 19:58:19,188 DEBUG  Insert 0: insert into TOPIC (CONTENT, PRAISE, UserId, PID) values (?, ?, ?, ?)
+2019-04-14 19:58:19,188 DEBUG  Update 0: update TOPIC set CONTENT=?, PRAISE=?, UserId=? where PID=?
+2019-04-14 19:58:19,188 DEBUG  Delete 0: delete from TOPIC where PID=?
+2019-04-14 19:58:19,188 DEBUG  Identity insert: insert into TOPIC (CONTENT, PRAISE, UserId) values (?, ?, ?)
+2019-04-14 19:58:19,209 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@41294371]
+2019-04-14 19:58:19,210 DEBUG Visiting attribute path : content
+2019-04-14 19:58:19,210 DEBUG Visiting attribute path : praise
+2019-04-14 19:58:19,210 DEBUG Visiting attribute path : user
+2019-04-14 19:58:19,213 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@181d8899]
+2019-04-14 19:58:19,214 DEBUG Visiting attribute path : user.username
+2019-04-14 19:58:19,214 DEBUG Visiting attribute path : user.password
+2019-04-14 19:58:19,214 DEBUG Visiting attribute path : user.sex
+2019-04-14 19:58:19,214 DEBUG Visiting attribute path : user.birthday
+2019-04-14 19:58:19,214 DEBUG Visiting attribute path : user.img
+2019-04-14 19:58:19,215 DEBUG Building LoadPlan...
+2019-04-14 19:58:19,227 DEBUG processing queryspace <gen:0>
+2019-04-14 19:58:19,231 DEBUG LoadPlan(entity=cn.lyl.ssh.model.Topic)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.Topic, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.Topic)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:1>, path=cn.lyl.ssh.model.Topic.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.Topic)
+          - SQL table alias mapping - topic0_
+          - alias suffix - 0_
+          - suffixed key columns - {PID1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cn.lyl.ssh.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_2_1_}
+
+2019-04-14 19:58:19,233 DEBUG Static select for entity cn.lyl.ssh.model.Topic [NONE]: select topic0_.PID as PID1_1_0_, topic0_.CONTENT as CONTENT2_1_0_, topic0_.PRAISE as PRAISE3_1_0_, topic0_.UserId as UserId4_1_0_, user1_.ID as ID1_2_1_, user1_.USERNAME as USERNAME2_2_1_, user1_.PASSWORD as PASSWORD3_2_1_, user1_.SEX as SEX4_2_1_, user1_.BIRTHDAY as BIRTHDAY5_2_1_, user1_.IMG as IMG6_2_1_ from TOPIC topic0_ left outer join USER user1_ on topic0_.UserId=user1_.ID where topic0_.PID=?
+2019-04-14 19:58:19,233 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5c5d6175]
+2019-04-14 19:58:19,233 DEBUG Visiting attribute path : content
+2019-04-14 19:58:19,233 DEBUG Visiting attribute path : praise
+2019-04-14 19:58:19,233 DEBUG Visiting attribute path : user
+2019-04-14 19:58:19,234 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b27b497]
+2019-04-14 19:58:19,234 DEBUG Visiting attribute path : user.username
+2019-04-14 19:58:19,234 DEBUG Visiting attribute path : user.password
+2019-04-14 19:58:19,234 DEBUG Visiting attribute path : user.sex
+2019-04-14 19:58:19,234 DEBUG Visiting attribute path : user.birthday
+2019-04-14 19:58:19,234 DEBUG Visiting attribute path : user.img
+2019-04-14 19:58:19,234 DEBUG Building LoadPlan...
+2019-04-14 19:58:19,234 DEBUG processing queryspace <gen:0>
+2019-04-14 19:58:19,234 DEBUG LoadPlan(entity=cn.lyl.ssh.model.Topic)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.Topic, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.Topic)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:1>, path=cn.lyl.ssh.model.Topic.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.Topic)
+          - SQL table alias mapping - topic0_
+          - alias suffix - 0_
+          - suffixed key columns - {PID1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cn.lyl.ssh.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_2_1_}
+
+2019-04-14 19:58:19,234 DEBUG Static select for entity cn.lyl.ssh.model.Topic [READ]: select topic0_.PID as PID1_1_0_, topic0_.CONTENT as CONTENT2_1_0_, topic0_.PRAISE as PRAISE3_1_0_, topic0_.UserId as UserId4_1_0_, user1_.ID as ID1_2_1_, user1_.USERNAME as USERNAME2_2_1_, user1_.PASSWORD as PASSWORD3_2_1_, user1_.SEX as SEX4_2_1_, user1_.BIRTHDAY as BIRTHDAY5_2_1_, user1_.IMG as IMG6_2_1_ from TOPIC topic0_ left outer join USER user1_ on topic0_.UserId=user1_.ID where topic0_.PID=?
+2019-04-14 19:58:19,247 DEBUG Static select for action ACTION_MERGE on entity cn.lyl.ssh.model.Topic: select topic0_.PID as PID1_1_0_, topic0_.CONTENT as CONTENT2_1_0_, topic0_.PRAISE as PRAISE3_1_0_, topic0_.UserId as UserId4_1_0_ from TOPIC topic0_ where topic0_.PID=?
+2019-04-14 19:58:19,247 DEBUG Static select for action ACTION_REFRESH on entity cn.lyl.ssh.model.Topic: select topic0_.PID as PID1_1_0_, topic0_.CONTENT as CONTENT2_1_0_, topic0_.PRAISE as PRAISE3_1_0_, topic0_.UserId as UserId4_1_0_ from TOPIC topic0_ where topic0_.PID=?
+2019-04-14 19:58:19,247 DEBUG Static SQL for entity: cn.lyl.ssh.model.Comment
+2019-04-14 19:58:19,247 DEBUG  Version select: select CID from COMMENT where CID =?
+2019-04-14 19:58:19,247 DEBUG  Snapshot select: select comment_.CID, comment_.CON as CON2_0_, comment_.PRAISER as PRAISER3_0_, comment_.USERID as USERID4_0_, comment_.TOPICID as TOPICID5_0_ from COMMENT comment_ where comment_.CID=?
+2019-04-14 19:58:19,247 DEBUG  Insert 0: insert into COMMENT (CON, PRAISER, USERID, TOPICID, CID) values (?, ?, ?, ?, ?)
+2019-04-14 19:58:19,247 DEBUG  Update 0: update COMMENT set CON=?, PRAISER=?, USERID=?, TOPICID=? where CID=?
+2019-04-14 19:58:19,247 DEBUG  Delete 0: delete from COMMENT where CID=?
+2019-04-14 19:58:19,247 DEBUG  Identity insert: insert into COMMENT (CON, PRAISER, USERID, TOPICID) values (?, ?, ?, ?)
+2019-04-14 19:58:19,248 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3650d4fc]
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : con
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : praiser
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : user
+2019-04-14 19:58:19,248 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@340a8894]
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : user.username
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : user.password
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : user.sex
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : user.birthday
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : user.img
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : topic
+2019-04-14 19:58:19,248 DEBUG Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4acc5dff]
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : topic.content
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : topic.praise
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : topic.user
+2019-04-14 19:58:19,248 DEBUG Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@70e94ecb]
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : topic.user.username
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : topic.user.password
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : topic.user.sex
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : topic.user.birthday
+2019-04-14 19:58:19,248 DEBUG Visiting attribute path : topic.user.img
+2019-04-14 19:58:19,248 DEBUG Building LoadPlan...
+2019-04-14 19:58:19,249 DEBUG processing queryspace <gen:0>
+2019-04-14 19:58:19,249 DEBUG LoadPlan(entity=cn.lyl.ssh.model.Comment)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.Comment, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.Comment)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:1>, path=cn.lyl.ssh.model.Comment.user)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.Topic, querySpaceUid=<gen:2>, path=cn.lyl.ssh.model.Comment.topic)
+             - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:3>, path=cn.lyl.ssh.model.Comment.topic.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.Comment)
+          - SQL table alias mapping - comment0_
+          - alias suffix - 0_
+          - suffixed key columns - {CID1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cn.lyl.ssh.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_2_1_}
+          - JOIN (JoinDefinedByMetadata(topic)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=cn.lyl.ssh.model.Topic)
+                - SQL table alias mapping - topic2_
+                - alias suffix - 2_
+                - suffixed key columns - {PID1_1_2_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:2> -> <gen:3>
+                   - EntityQuerySpaceImpl(uid=<gen:3>, entity=cn.lyl.ssh.model.User)
+                      - SQL table alias mapping - user3_
+                      - alias suffix - 3_
+                      - suffixed key columns - {ID1_2_3_}
+
+2019-04-14 19:58:19,250 DEBUG Static select for entity cn.lyl.ssh.model.Comment [NONE]: select comment0_.CID as CID1_0_0_, comment0_.CON as CON2_0_0_, comment0_.PRAISER as PRAISER3_0_0_, comment0_.USERID as USERID4_0_0_, comment0_.TOPICID as TOPICID5_0_0_, user1_.ID as ID1_2_1_, user1_.USERNAME as USERNAME2_2_1_, user1_.PASSWORD as PASSWORD3_2_1_, user1_.SEX as SEX4_2_1_, user1_.BIRTHDAY as BIRTHDAY5_2_1_, user1_.IMG as IMG6_2_1_, topic2_.PID as PID1_1_2_, topic2_.CONTENT as CONTENT2_1_2_, topic2_.PRAISE as PRAISE3_1_2_, topic2_.UserId as UserId4_1_2_, user3_.ID as ID1_2_3_, user3_.USERNAME as USERNAME2_2_3_, user3_.PASSWORD as PASSWORD3_2_3_, user3_.SEX as SEX4_2_3_, user3_.BIRTHDAY as BIRTHDAY5_2_3_, user3_.IMG as IMG6_2_3_ from COMMENT comment0_ left outer join USER user1_ on comment0_.USERID=user1_.ID left outer join TOPIC topic2_ on comment0_.TOPICID=topic2_.PID left outer join USER user3_ on topic2_.UserId=user3_.ID where comment0_.CID=?
+2019-04-14 19:58:19,250 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e446d92]
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : con
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : praiser
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : user
+2019-04-14 19:58:19,250 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6d5c2745]
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : user.username
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : user.password
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : user.sex
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : user.birthday
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : user.img
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : topic
+2019-04-14 19:58:19,250 DEBUG Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1947596f]
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : topic.content
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : topic.praise
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : topic.user
+2019-04-14 19:58:19,250 DEBUG Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f6de586]
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : topic.user.username
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : topic.user.password
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : topic.user.sex
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : topic.user.birthday
+2019-04-14 19:58:19,250 DEBUG Visiting attribute path : topic.user.img
+2019-04-14 19:58:19,250 DEBUG Building LoadPlan...
+2019-04-14 19:58:19,250 DEBUG processing queryspace <gen:0>
+2019-04-14 19:58:19,251 DEBUG LoadPlan(entity=cn.lyl.ssh.model.Comment)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.Comment, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.Comment)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:1>, path=cn.lyl.ssh.model.Comment.user)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.Topic, querySpaceUid=<gen:2>, path=cn.lyl.ssh.model.Comment.topic)
+             - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:3>, path=cn.lyl.ssh.model.Comment.topic.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.Comment)
+          - SQL table alias mapping - comment0_
+          - alias suffix - 0_
+          - suffixed key columns - {CID1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cn.lyl.ssh.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_2_1_}
+          - JOIN (JoinDefinedByMetadata(topic)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=cn.lyl.ssh.model.Topic)
+                - SQL table alias mapping - topic2_
+                - alias suffix - 2_
+                - suffixed key columns - {PID1_1_2_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:2> -> <gen:3>
+                   - EntityQuerySpaceImpl(uid=<gen:3>, entity=cn.lyl.ssh.model.User)
+                      - SQL table alias mapping - user3_
+                      - alias suffix - 3_
+                      - suffixed key columns - {ID1_2_3_}
+
+2019-04-14 19:58:19,251 DEBUG Static select for entity cn.lyl.ssh.model.Comment [READ]: select comment0_.CID as CID1_0_0_, comment0_.CON as CON2_0_0_, comment0_.PRAISER as PRAISER3_0_0_, comment0_.USERID as USERID4_0_0_, comment0_.TOPICID as TOPICID5_0_0_, user1_.ID as ID1_2_1_, user1_.USERNAME as USERNAME2_2_1_, user1_.PASSWORD as PASSWORD3_2_1_, user1_.SEX as SEX4_2_1_, user1_.BIRTHDAY as BIRTHDAY5_2_1_, user1_.IMG as IMG6_2_1_, topic2_.PID as PID1_1_2_, topic2_.CONTENT as CONTENT2_1_2_, topic2_.PRAISE as PRAISE3_1_2_, topic2_.UserId as UserId4_1_2_, user3_.ID as ID1_2_3_, user3_.USERNAME as USERNAME2_2_3_, user3_.PASSWORD as PASSWORD3_2_3_, user3_.SEX as SEX4_2_3_, user3_.BIRTHDAY as BIRTHDAY5_2_3_, user3_.IMG as IMG6_2_3_ from COMMENT comment0_ left outer join USER user1_ on comment0_.USERID=user1_.ID left outer join TOPIC topic2_ on comment0_.TOPICID=topic2_.PID left outer join USER user3_ on topic2_.UserId=user3_.ID where comment0_.CID=?
+2019-04-14 19:58:19,252 DEBUG Static select for action ACTION_MERGE on entity cn.lyl.ssh.model.Comment: select comment0_.CID as CID1_0_0_, comment0_.CON as CON2_0_0_, comment0_.PRAISER as PRAISER3_0_0_, comment0_.USERID as USERID4_0_0_, comment0_.TOPICID as TOPICID5_0_0_ from COMMENT comment0_ where comment0_.CID=?
+2019-04-14 19:58:19,252 DEBUG Static select for action ACTION_REFRESH on entity cn.lyl.ssh.model.Comment: select comment0_.CID as CID1_0_0_, comment0_.CON as CON2_0_0_, comment0_.PRAISER as PRAISER3_0_0_, comment0_.USERID as USERID4_0_0_, comment0_.TOPICID as TOPICID5_0_0_ from COMMENT comment0_ where comment0_.CID=?
+2019-04-14 19:58:19,252 DEBUG Static SQL for entity: cn.lyl.ssh.model.User
+2019-04-14 19:58:19,252 DEBUG  Version select: select ID from USER where ID =?
+2019-04-14 19:58:19,252 DEBUG  Snapshot select: select user_.ID, user_.USERNAME as USERNAME2_2_, user_.PASSWORD as PASSWORD3_2_, user_.SEX as SEX4_2_, user_.BIRTHDAY as BIRTHDAY5_2_, user_.IMG as IMG6_2_ from USER user_ where user_.ID=?
+2019-04-14 19:58:19,252 DEBUG  Insert 0: insert into USER (USERNAME, PASSWORD, SEX, BIRTHDAY, IMG, ID) values (?, ?, ?, ?, ?, ?)
+2019-04-14 19:58:19,252 DEBUG  Update 0: update USER set USERNAME=?, PASSWORD=?, SEX=?, BIRTHDAY=?, IMG=? where ID=?
+2019-04-14 19:58:19,252 DEBUG  Delete 0: delete from USER where ID=?
+2019-04-14 19:58:19,252 DEBUG  Identity insert: insert into USER (USERNAME, PASSWORD, SEX, BIRTHDAY, IMG) values (?, ?, ?, ?, ?)
+2019-04-14 19:58:19,252 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7c847072]
+2019-04-14 19:58:19,252 DEBUG Visiting attribute path : username
+2019-04-14 19:58:19,252 DEBUG Visiting attribute path : password
+2019-04-14 19:58:19,252 DEBUG Visiting attribute path : sex
+2019-04-14 19:58:19,252 DEBUG Visiting attribute path : birthday
+2019-04-14 19:58:19,252 DEBUG Visiting attribute path : img
+2019-04-14 19:58:19,252 DEBUG Building LoadPlan...
+2019-04-14 19:58:19,252 DEBUG processing queryspace <gen:0>
+2019-04-14 19:58:19,253 DEBUG LoadPlan(entity=cn.lyl.ssh.model.User)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_2_0_}
+
+2019-04-14 19:58:19,253 DEBUG Static select for entity cn.lyl.ssh.model.User [NONE]: select user0_.ID as ID1_2_0_, user0_.USERNAME as USERNAME2_2_0_, user0_.PASSWORD as PASSWORD3_2_0_, user0_.SEX as SEX4_2_0_, user0_.BIRTHDAY as BIRTHDAY5_2_0_, user0_.IMG as IMG6_2_0_ from USER user0_ where user0_.ID=?
+2019-04-14 19:58:19,253 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@23f86d8a]
+2019-04-14 19:58:19,253 DEBUG Visiting attribute path : username
+2019-04-14 19:58:19,253 DEBUG Visiting attribute path : password
+2019-04-14 19:58:19,253 DEBUG Visiting attribute path : sex
+2019-04-14 19:58:19,253 DEBUG Visiting attribute path : birthday
+2019-04-14 19:58:19,253 DEBUG Visiting attribute path : img
+2019-04-14 19:58:19,253 DEBUG Building LoadPlan...
+2019-04-14 19:58:19,253 DEBUG processing queryspace <gen:0>
+2019-04-14 19:58:19,253 DEBUG LoadPlan(entity=cn.lyl.ssh.model.User)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_2_0_}
+
+2019-04-14 19:58:19,253 DEBUG Static select for entity cn.lyl.ssh.model.User [READ]: select user0_.ID as ID1_2_0_, user0_.USERNAME as USERNAME2_2_0_, user0_.PASSWORD as PASSWORD3_2_0_, user0_.SEX as SEX4_2_0_, user0_.BIRTHDAY as BIRTHDAY5_2_0_, user0_.IMG as IMG6_2_0_ from USER user0_ where user0_.ID=?
+2019-04-14 19:58:19,253 DEBUG Static select for action ACTION_MERGE on entity cn.lyl.ssh.model.User: select user0_.ID as ID1_2_0_, user0_.USERNAME as USERNAME2_2_0_, user0_.PASSWORD as PASSWORD3_2_0_, user0_.SEX as SEX4_2_0_, user0_.BIRTHDAY as BIRTHDAY5_2_0_, user0_.IMG as IMG6_2_0_ from USER user0_ where user0_.ID=?
+2019-04-14 19:58:19,254 DEBUG Static select for action ACTION_REFRESH on entity cn.lyl.ssh.model.User: select user0_.ID as ID1_2_0_, user0_.USERNAME as USERNAME2_2_0_, user0_.PASSWORD as PASSWORD3_2_0_, user0_.SEX as SEX4_2_0_, user0_.BIRTHDAY as BIRTHDAY5_2_0_, user0_.IMG as IMG6_2_0_ from USER user0_ where user0_.ID=?
+2019-04-14 19:58:19,296 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:19,333 DEBUG No alter strings for table : COMMENT
+2019-04-14 19:58:19,333 DEBUG No alter strings for table : TOPIC
+2019-04-14 19:58:19,333 DEBUG No alter strings for table : USER
+2019-04-14 19:58:19,362 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:19,362 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@383790cf [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3681ad5b)
+2019-04-14 19:58:19,362 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:58:19,363 DEBUG No JtaPlatform was specified, checking resolver
+2019-04-14 19:58:19,364 DEBUG No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2019-04-14 19:58:19,371 DEBUG Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-04-14 19:58:19,372 DEBUG Checking 0 named HQL queries
+2019-04-14 19:58:19,373 DEBUG Checking 0 named SQL queries
+2019-04-14 19:58:19,374 DEBUG Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@79a7bfbc
+2019-04-14 19:58:19,374 DEBUG Registering SessionFactory: 8b262ae7-6567-4a93-8646-fa5813355e6b (<unnamed>)
+2019-04-14 19:58:19,374 DEBUG Not binding SessionFactory to JNDI, no JNDI name configured
+2019-04-14 19:58:19,426 DEBUG HHH000031: Closing
+2019-04-14 19:58:19,426 DEBUG Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@1abebef3] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@6b2e0f78]
+2019-04-14 19:58:19,430 DEBUG Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2019-04-14 19:58:19,430 DEBUG Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2019-04-14 19:59:32,960 INFO MLog clients using log4j logging.
+2019-04-14 19:59:33,278 INFO Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-04-14 19:59:33,294 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge164a27outfe12qh2tg|909217e] registered.
+2019-04-14 19:59:33,554 DEBUG Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-04-14 19:59:33,566 DEBUG Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-04-14 19:59:33,568 DEBUG Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-04-14 19:59:33,571 DEBUG Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-04-14 19:59:33,644 INFO HHH000412: Hibernate Core {5.3.7.Final}
+2019-04-14 19:59:33,647 INFO HHH000206: hibernate.properties not found
+2019-04-14 19:59:33,772 DEBUG Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+2019-04-14 19:59:33,774 WARN HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-04-14 19:59:33,775 DEBUG Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2019-04-14 19:59:33,778 DEBUG cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2019-04-14 19:59:33,890 DEBUG Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2019-04-14 19:59:33,890 WARN HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-04-14 19:59:33,890 DEBUG Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2019-04-14 19:59:33,901 DEBUG Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2019-04-14 19:59:34,651 DEBUG Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2019-04-14 19:59:34,651 WARN HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-04-14 19:59:34,652 DEBUG Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2019-04-14 19:59:34,662 DEBUG Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2019-04-14 19:59:34,666 DEBUG Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2019-04-14 19:59:34,666 WARN HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-04-14 19:59:34,666 DEBUG Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2019-04-14 19:59:34,669 DEBUG Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2019-04-14 19:59:34,675 DEBUG Building session factory using internal StandardServiceRegistryBuilder
+2019-04-14 19:59:34,682 DEBUG Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-04-14 19:59:34,682 DEBUG Building session factory using provided StandardServiceRegistry
+2019-04-14 19:59:34,695 DEBUG Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2019-04-14 19:59:34,696 DEBUG Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-04-14 19:59:34,715 INFO HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-14 19:59:34,749 DEBUG Adding type registration boolean -> org.hibernate.type.BooleanType@49096b06
+2019-04-14 19:59:34,749 DEBUG Adding type registration boolean -> org.hibernate.type.BooleanType@49096b06
+2019-04-14 19:59:34,749 DEBUG Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@49096b06
+2019-04-14 19:59:34,750 DEBUG Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@213deac2
+2019-04-14 19:59:34,750 DEBUG Adding type registration true_false -> org.hibernate.type.TrueFalseType@5a9800f8
+2019-04-14 19:59:34,751 DEBUG Adding type registration yes_no -> org.hibernate.type.YesNoType@4159e81b
+2019-04-14 19:59:34,752 DEBUG Adding type registration byte -> org.hibernate.type.ByteType@400d912a
+2019-04-14 19:59:34,752 DEBUG Adding type registration byte -> org.hibernate.type.ByteType@400d912a
+2019-04-14 19:59:34,753 DEBUG Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@400d912a
+2019-04-14 19:59:34,754 DEBUG Adding type registration character -> org.hibernate.type.CharacterType@2caf6912
+2019-04-14 19:59:34,754 DEBUG Adding type registration char -> org.hibernate.type.CharacterType@2caf6912
+2019-04-14 19:59:34,754 DEBUG Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2caf6912
+2019-04-14 19:59:34,755 DEBUG Adding type registration short -> org.hibernate.type.ShortType@d400943
+2019-04-14 19:59:34,755 DEBUG Adding type registration short -> org.hibernate.type.ShortType@d400943
+2019-04-14 19:59:34,755 DEBUG Adding type registration java.lang.Short -> org.hibernate.type.ShortType@d400943
+2019-04-14 19:59:34,757 DEBUG Adding type registration integer -> org.hibernate.type.IntegerType@5a4c638d
+2019-04-14 19:59:34,757 DEBUG Adding type registration int -> org.hibernate.type.IntegerType@5a4c638d
+2019-04-14 19:59:34,757 DEBUG Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5a4c638d
+2019-04-14 19:59:34,759 DEBUG Adding type registration long -> org.hibernate.type.LongType@389562d6
+2019-04-14 19:59:34,759 DEBUG Adding type registration long -> org.hibernate.type.LongType@389562d6
+2019-04-14 19:59:34,759 DEBUG Adding type registration java.lang.Long -> org.hibernate.type.LongType@389562d6
+2019-04-14 19:59:34,760 DEBUG Adding type registration float -> org.hibernate.type.FloatType@60f2e0bd
+2019-04-14 19:59:34,760 DEBUG Adding type registration float -> org.hibernate.type.FloatType@60f2e0bd
+2019-04-14 19:59:34,760 DEBUG Adding type registration java.lang.Float -> org.hibernate.type.FloatType@60f2e0bd
+2019-04-14 19:59:34,761 DEBUG Adding type registration double -> org.hibernate.type.DoubleType@e8fadb0
+2019-04-14 19:59:34,761 DEBUG Adding type registration double -> org.hibernate.type.DoubleType@e8fadb0
+2019-04-14 19:59:34,761 DEBUG Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@e8fadb0
+2019-04-14 19:59:34,762 DEBUG Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@26a94fa5
+2019-04-14 19:59:34,762 DEBUG Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@26a94fa5
+2019-04-14 19:59:34,763 DEBUG Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4303b7f0
+2019-04-14 19:59:34,763 DEBUG Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4303b7f0
+2019-04-14 19:59:34,764 DEBUG Adding type registration string -> org.hibernate.type.StringType@5ec77191
+2019-04-14 19:59:34,765 DEBUG Adding type registration java.lang.String -> org.hibernate.type.StringType@5ec77191
+2019-04-14 19:59:34,765 DEBUG Adding type registration nstring -> org.hibernate.type.StringNVarcharType@c68a5f8
+2019-04-14 19:59:34,766 DEBUG Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2e1792e7
+2019-04-14 19:59:34,767 DEBUG Adding type registration url -> org.hibernate.type.UrlType@41e1455d
+2019-04-14 19:59:34,767 DEBUG Adding type registration java.net.URL -> org.hibernate.type.UrlType@41e1455d
+2019-04-14 19:59:34,769 DEBUG Adding type registration Duration -> org.hibernate.type.DurationType@64e1dd11
+2019-04-14 19:59:34,769 DEBUG Adding type registration java.time.Duration -> org.hibernate.type.DurationType@64e1dd11
+2019-04-14 19:59:34,779 DEBUG Adding type registration Instant -> org.hibernate.type.InstantType@45394b31
+2019-04-14 19:59:34,779 DEBUG Adding type registration java.time.Instant -> org.hibernate.type.InstantType@45394b31
+2019-04-14 19:59:34,780 DEBUG Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@74fef3f7
+2019-04-14 19:59:34,780 DEBUG Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@74fef3f7
+2019-04-14 19:59:34,782 DEBUG Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6a933be2
+2019-04-14 19:59:34,782 DEBUG Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6a933be2
+2019-04-14 19:59:34,783 DEBUG Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@272a179c
+2019-04-14 19:59:34,783 DEBUG Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@272a179c
+2019-04-14 19:59:34,784 DEBUG Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@a619c2
+2019-04-14 19:59:34,785 DEBUG Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@a619c2
+2019-04-14 19:59:34,786 DEBUG Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3b152928
+2019-04-14 19:59:34,786 DEBUG Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3b152928
+2019-04-14 19:59:34,790 DEBUG Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@585c13de
+2019-04-14 19:59:34,790 DEBUG Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@585c13de
+2019-04-14 19:59:34,791 DEBUG Adding type registration date -> org.hibernate.type.DateType@7c8326a4
+2019-04-14 19:59:34,791 DEBUG Adding type registration java.sql.Date -> org.hibernate.type.DateType@7c8326a4
+2019-04-14 19:59:34,793 DEBUG Adding type registration time -> org.hibernate.type.TimeType@6f012914
+2019-04-14 19:59:34,793 DEBUG Adding type registration java.sql.Time -> org.hibernate.type.TimeType@6f012914
+2019-04-14 19:59:34,794 DEBUG Adding type registration timestamp -> org.hibernate.type.TimestampType@732bb66d
+2019-04-14 19:59:34,794 DEBUG Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@732bb66d
+2019-04-14 19:59:34,794 DEBUG Adding type registration java.util.Date -> org.hibernate.type.TimestampType@732bb66d
+2019-04-14 19:59:34,795 DEBUG Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6ad5923a
+2019-04-14 19:59:34,796 DEBUG Adding type registration calendar -> org.hibernate.type.CalendarType@4fe01803
+2019-04-14 19:59:34,797 DEBUG Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4fe01803
+2019-04-14 19:59:34,797 DEBUG Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4fe01803
+2019-04-14 19:59:34,797 DEBUG Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4565a70a
+2019-04-14 19:59:34,798 DEBUG Adding type registration locale -> org.hibernate.type.LocaleType@7b60c3e
+2019-04-14 19:59:34,798 DEBUG Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7b60c3e
+2019-04-14 19:59:34,799 DEBUG Adding type registration currency -> org.hibernate.type.CurrencyType@2d7e1102
+2019-04-14 19:59:34,799 DEBUG Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2d7e1102
+2019-04-14 19:59:34,800 DEBUG Adding type registration timezone -> org.hibernate.type.TimeZoneType@72458efc
+2019-04-14 19:59:34,800 DEBUG Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@72458efc
+2019-04-14 19:59:34,801 DEBUG Adding type registration class -> org.hibernate.type.ClassType@3e134896
+2019-04-14 19:59:34,801 DEBUG Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3e134896
+2019-04-14 19:59:34,802 DEBUG Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@4917d36b
+2019-04-14 19:59:34,802 DEBUG Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@4917d36b
+2019-04-14 19:59:34,802 DEBUG Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@c3fa05a
+2019-04-14 19:59:34,803 DEBUG Adding type registration binary -> org.hibernate.type.BinaryType@17ae7628
+2019-04-14 19:59:34,803 DEBUG Adding type registration byte[] -> org.hibernate.type.BinaryType@17ae7628
+2019-04-14 19:59:34,804 DEBUG Adding type registration [B -> org.hibernate.type.BinaryType@17ae7628
+2019-04-14 19:59:34,804 DEBUG Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@42f22995
+2019-04-14 19:59:34,805 DEBUG Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@42f22995
+2019-04-14 19:59:34,805 DEBUG Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@42f22995
+2019-04-14 19:59:34,806 DEBUG Adding type registration row_version -> org.hibernate.type.RowVersionType@1c12f3ee
+2019-04-14 19:59:34,806 DEBUG Adding type registration image -> org.hibernate.type.ImageType@57bd802b
+2019-04-14 19:59:34,807 DEBUG Adding type registration characters -> org.hibernate.type.CharArrayType@511d5d04
+2019-04-14 19:59:34,807 DEBUG Adding type registration char[] -> org.hibernate.type.CharArrayType@511d5d04
+2019-04-14 19:59:34,807 DEBUG Adding type registration [C -> org.hibernate.type.CharArrayType@511d5d04
+2019-04-14 19:59:34,809 DEBUG Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@5b78fdb1
+2019-04-14 19:59:34,809 DEBUG Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@5b78fdb1
+2019-04-14 19:59:34,809 DEBUG Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@5b78fdb1
+2019-04-14 19:59:34,810 DEBUG Adding type registration text -> org.hibernate.type.TextType@715fb77
+2019-04-14 19:59:34,810 DEBUG Adding type registration ntext -> org.hibernate.type.NTextType@16fe9c29
+2019-04-14 19:59:34,812 DEBUG Adding type registration blob -> org.hibernate.type.BlobType@4d4960c8
+2019-04-14 19:59:34,812 DEBUG Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4d4960c8
+2019-04-14 19:59:34,812 DEBUG Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6b580b88
+2019-04-14 19:59:34,813 DEBUG Adding type registration clob -> org.hibernate.type.ClobType@6f8f8a80
+2019-04-14 19:59:34,813 DEBUG Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6f8f8a80
+2019-04-14 19:59:34,815 DEBUG Adding type registration nclob -> org.hibernate.type.NClobType@7004e3d
+2019-04-14 19:59:34,815 DEBUG Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7004e3d
+2019-04-14 19:59:34,815 DEBUG Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@588ffeb
+2019-04-14 19:59:34,816 DEBUG Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@67ec8477
+2019-04-14 19:59:34,817 DEBUG Adding type registration serializable -> org.hibernate.type.SerializableType@278f8425
+2019-04-14 19:59:34,821 DEBUG Adding type registration object -> org.hibernate.type.ObjectType@69cac930
+2019-04-14 19:59:34,821 DEBUG Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@69cac930
+2019-04-14 19:59:34,821 DEBUG Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6ad6fa53
+2019-04-14 19:59:34,822 DEBUG Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@55ea2d70
+2019-04-14 19:59:34,822 DEBUG Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5e742e4
+2019-04-14 19:59:34,822 DEBUG Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@175acfb2
+2019-04-14 19:59:34,822 DEBUG Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@4a03bb68
+2019-04-14 19:59:34,822 DEBUG Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4e868ef5
+2019-04-14 19:59:34,822 DEBUG Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@71c905a3
+2019-04-14 19:59:34,822 DEBUG Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@30af7377
+2019-04-14 19:59:34,851 DEBUG Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2019-04-14 19:59:34,851 DEBUG Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2019-04-14 19:59:34,852 DEBUG Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2019-04-14 19:59:34,852 DEBUG Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2019-04-14 19:59:34,852 DEBUG Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2019-04-14 19:59:34,854 DEBUG Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2019-04-14 19:59:34,854 DEBUG Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2019-04-14 19:59:34,855 DEBUG Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-04-14 19:59:34,856 DEBUG Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2019-04-14 19:59:34,856 DEBUG Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019-04-14 19:59:34,857 DEBUG Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019-04-14 19:59:34,857 DEBUG Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019-04-14 19:59:34,857 DEBUG Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-04-14 19:59:34,858 DEBUG Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2019-04-14 19:59:34,907 DEBUG incremented pending_acquires: 1
+2019-04-14 19:59:34,907 DEBUG incremented pending_acquires: 2
+2019-04-14 19:59:34,907 DEBUG incremented pending_acquires: 3
+2019-04-14 19:59:34,907 DEBUG incremented pending_acquires: 4
+2019-04-14 19:59:34,908 DEBUG incremented pending_acquires: 5
+2019-04-14 19:59:34,908 DEBUG incremented pending_acquires: 6
+2019-04-14 19:59:34,908 DEBUG incremented pending_acquires: 7
+2019-04-14 19:59:34,908 DEBUG incremented pending_acquires: 8
+2019-04-14 19:59:34,908 DEBUG incremented pending_acquires: 9
+2019-04-14 19:59:34,908 DEBUG incremented pending_acquires: 10
+2019-04-14 19:59:34,908 DEBUG com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 config: [start -> 10; min -> 1; max -> 100; inc -> 10; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-04-14 19:59:34,908 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge164a27outfe12qh2tg|909217e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge164a27outfe12qh2tg|909217e, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/ssh, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 20, maxStatementsPerConnection -> 5, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-14 19:59:34,908 DEBUG acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2019-04-14 19:59:34,908 DEBUG awaitAvailable(): [unknown]
+2019-04-14 19:59:34,909 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 0, unused: 0, excluded: 0]
+2019-04-14 19:59:35,163 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,163 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,164 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,164 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,164 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,164 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,164 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 1, unused: 1, excluded: 0]
+2019-04-14 19:59:35,164 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,164 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,164 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,164 DEBUG decremented pending_acquires: 9
+2019-04-14 19:59:35,164 DEBUG decremented pending_acquires: 8
+2019-04-14 19:59:35,165 DEBUG decremented pending_acquires: 7
+2019-04-14 19:59:35,169 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,169 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,169 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,169 DEBUG decremented pending_acquires: 6
+2019-04-14 19:59:35,172 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,172 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,172 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,172 DEBUG decremented pending_acquires: 5
+2019-04-14 19:59:35,180 DEBUG Database ->
+       name : MySQL
+    version : 5.5.50
+      major : 5
+      minor : 5
+2019-04-14 19:59:35,180 DEBUG Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
+      major : 5
+      minor : 1
+2019-04-14 19:59:35,180 DEBUG JDBC version : 4.0
+2019-04-14 19:59:35,182 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,182 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,182 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,182 DEBUG decremented pending_acquires: 4
+2019-04-14 19:59:35,184 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,184 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,184 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,184 DEBUG decremented pending_acquires: 3
+2019-04-14 19:59:35,188 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,188 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,188 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,188 DEBUG decremented pending_acquires: 2
+2019-04-14 19:59:35,192 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,192 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,192 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,192 DEBUG decremented pending_acquires: 1
+2019-04-14 19:59:35,199 INFO HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-04-14 19:59:35,206 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,206 DEBUG com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22446ea6.acquireResource() returning. 
+2019-04-14 19:59:35,206 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,206 DEBUG decremented pending_acquires: 0
+2019-04-14 19:59:35,235 DEBUG Unable to use Java 1.7 Connection#getSchema
+2019-04-14 19:59:35,236 DEBUG Unable to resolve connection default schema
+org.hibernate.HibernateException: Use of DefaultSchemaNameResolver requires Dialect to provide the proper SQL statement/command but provided Dialect [org.hibernate.dialect.MySQL5InnoDBDialect] did not return anything from Dialect#getCurrentSchemaCommand
+	at org.hibernate.engine.jdbc.env.internal.DefaultSchemaNameResolver$SchemaNameResolverFallbackDelegate.resolveSchemaName(DefaultSchemaNameResolver.java:100)
+	at org.hibernate.engine.jdbc.env.internal.DefaultSchemaNameResolver.resolveSchemaName(DefaultSchemaNameResolver.java:76)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.determineCurrentSchemaName(JdbcEnvironmentImpl.java:298)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:232)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:84)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:474)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:85)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:689)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85)
+	at cn.lyl.ssh.test.test.test(test.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+2019-04-14 19:59:35,239 DEBUG JDBC driver metadata reported database stores quoted identifiers in more than one case
+2019-04-14 19:59:35,241 DEBUG IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2019-04-14 19:59:35,248 INFO HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-14 19:59:35,248 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,249 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:35,249 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,249 DEBUG com.mchange.v2.c3p0.impl.NewProxyConnection@213860b8: close() called more than once.
+2019-04-14 19:59:35,253 DEBUG Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2019-04-14 19:59:35,258 DEBUG Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@27c04377] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@34dc85a]
+2019-04-14 19:59:35,417 DEBUG Mapping class: cn.lyl.ssh.model.Comment -> COMMENT
+2019-04-14 19:59:35,422 DEBUG Mapped property: cid -> [CID]
+2019-04-14 19:59:35,423 DEBUG Forcing column [cid] to be non-null as it is part of the primary key for table [comment]
+2019-04-14 19:59:35,424 DEBUG Mapped property: con -> [CON]
+2019-04-14 19:59:35,424 DEBUG Mapped property: praiser -> [PRAISER]
+2019-04-14 19:59:35,427 DEBUG Mapped property: user -> [USERID]
+2019-04-14 19:59:35,427 DEBUG Mapped property: topic -> [TOPICID]
+2019-04-14 19:59:35,428 DEBUG Mapping class: cn.lyl.ssh.model.Topic -> TOPIC
+2019-04-14 19:59:35,428 DEBUG Mapped property: pid -> [PID]
+2019-04-14 19:59:35,428 DEBUG Forcing column [pid] to be non-null as it is part of the primary key for table [topic]
+2019-04-14 19:59:35,428 DEBUG Mapped property: content -> [CONTENT]
+2019-04-14 19:59:35,428 DEBUG Mapped property: praise -> [PRAISE]
+2019-04-14 19:59:35,428 DEBUG Mapped property: user -> [UserId]
+2019-04-14 19:59:35,428 DEBUG Mapping class: cn.lyl.ssh.model.User -> USER
+2019-04-14 19:59:35,428 DEBUG Mapped property: id -> [ID]
+2019-04-14 19:59:35,428 DEBUG Forcing column [id] to be non-null as it is part of the primary key for table [user]
+2019-04-14 19:59:35,428 DEBUG Mapped property: username -> [USERNAME]
+2019-04-14 19:59:35,428 DEBUG Mapped property: password -> [PASSWORD]
+2019-04-14 19:59:35,428 DEBUG Mapped property: sex -> [SEX]
+2019-04-14 19:59:35,429 DEBUG Mapped property: birthday -> [BIRTHDAY]
+2019-04-14 19:59:35,429 DEBUG Mapped property: img -> [IMG]
+2019-04-14 19:59:35,432 DEBUG Resolving reference to class: cn.lyl.ssh.model.User
+2019-04-14 19:59:35,434 DEBUG Resolving reference to class: cn.lyl.ssh.model.Topic
+2019-04-14 19:59:35,434 DEBUG Resolving reference to class: cn.lyl.ssh.model.User
+2019-04-14 19:59:35,435 DEBUG Resolving reference to class: cn.lyl.ssh.model.User
+2019-04-14 19:59:35,435 DEBUG Resolving reference to class: cn.lyl.ssh.model.Topic
+2019-04-14 19:59:35,435 DEBUG Resolving reference to class: cn.lyl.ssh.model.User
+2019-04-14 19:59:35,462 DEBUG Building session factory
+2019-04-14 19:59:35,463 DEBUG SessionFactory name : null
+2019-04-14 19:59:35,464 DEBUG Automatic flush during beforeCompletion(): enabled
+2019-04-14 19:59:35,464 DEBUG Automatic session close at end of transaction: disabled
+2019-04-14 19:59:35,464 DEBUG Statistics: disabled
+2019-04-14 19:59:35,464 DEBUG Deleted entity synthetic identifier rollback: disabled
+2019-04-14 19:59:35,464 DEBUG Default entity-mode: pojo
+2019-04-14 19:59:35,464 DEBUG Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2019-04-14 19:59:35,464 DEBUG Allow initialization of lazy state outside session : disabled
+2019-04-14 19:59:35,464 DEBUG Using BatchFetchStyle : LEGACY
+2019-04-14 19:59:35,464 DEBUG Default batch fetch size: -1
+2019-04-14 19:59:35,464 DEBUG Maximum outer join fetch depth: 2
+2019-04-14 19:59:35,464 DEBUG Default null ordering: NONE
+2019-04-14 19:59:35,464 DEBUG Order SQL updates by primary key: disabled
+2019-04-14 19:59:35,464 DEBUG Order SQL inserts for batching: disabled
+2019-04-14 19:59:35,464 DEBUG multi-tenancy strategy : NONE
+2019-04-14 19:59:35,464 DEBUG JTA Track by Thread: enabled
+2019-04-14 19:59:35,464 DEBUG Query language substitutions: {}
+2019-04-14 19:59:35,464 DEBUG Named query checking : enabled
+2019-04-14 19:59:35,464 DEBUG Second-level cache: disabled
+2019-04-14 19:59:35,464 DEBUG Second-level query cache: disabled
+2019-04-14 19:59:35,464 DEBUG Second-level query cache factory: null
+2019-04-14 19:59:35,465 DEBUG Second-level cache region prefix: null
+2019-04-14 19:59:35,465 DEBUG Optimize second-level cache for minimal puts: disabled
+2019-04-14 19:59:35,465 DEBUG Structured second-level cache entries: disabled
+2019-04-14 19:59:35,465 DEBUG Second-level cache direct-reference entries: disabled
+2019-04-14 19:59:35,465 DEBUG Automatic eviction of collection cache: disabled
+2019-04-14 19:59:35,465 DEBUG JDBC batch size: 15
+2019-04-14 19:59:35,465 DEBUG JDBC batch updates for versioned data: enabled
+2019-04-14 19:59:35,465 DEBUG Scrollable result sets: enabled
+2019-04-14 19:59:35,465 DEBUG Wrap result sets: disabled
+2019-04-14 19:59:35,465 DEBUG JDBC3 getGeneratedKeys(): enabled
+2019-04-14 19:59:35,465 DEBUG JDBC result set fetch size: null
+2019-04-14 19:59:35,465 DEBUG Connection release mode: ON_CLOSE
+2019-04-14 19:59:35,465 DEBUG Generate SQL with comments: disabled
+2019-04-14 19:59:35,465 DEBUG JPA compliance - query : 
+2019-04-14 19:59:35,465 DEBUG JPA compliance - closed-handling : 
+2019-04-14 19:59:35,465 DEBUG JPA compliance - lists : 
+2019-04-14 19:59:35,465 DEBUG JPA compliance - transactions : 
+2019-04-14 19:59:35,541 DEBUG Session factory constructed with filter configurations : {}
+2019-04-14 19:59:35,546 DEBUG Instantiating session factory with properties: {sun.desktop=windows, hibernate.format_sql=true, awt.toolkit=sun.awt.windows.WToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@6ab4ba9f, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.cpu.isalist=amd64, sun.jnu.encoding=GBK, hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect, java.class.path=C:\Users\20996\git\ssh\ssh\target\test-classes;C:\Users\20996\git\ssh\ssh\target\classes;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.jupiter.api_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.jupiter.engine_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.jupiter.migrationsupport_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.jupiter.params_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.commons_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.engine_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.launcher_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.runner_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.platform.suite.api_1.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit.vintage.engine_5.3.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.opentest4j_1.1.1.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.apiguardian_1.0.0.v20181005-1442.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.junit_4.12.0.v201504281640\junit.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\annotations-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina-ant.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina-ha.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina-storeconfig.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina-tribes.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\catalina.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\ecj-4.6.3.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\el-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\jasper-el.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\jasper.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\jaspic-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\jsp-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\servlet-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-api.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-coyote.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-dbcp.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-i18n-es.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-i18n-fr.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-i18n-ja.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-i18n-ru.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-jdbc.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-jni.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-util-scan.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-util.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\tomcat-websocket.jar;D:\Javaliuyiling\apache-tomcat-8.5.38\lib\websocket-api.jar;C:\Users\20996\.m2\repository\org\springframework\spring-context\5.1.3.RELEASE\spring-context-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-aop\5.1.3.RELEASE\spring-aop-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-beans\5.1.3.RELEASE\spring-beans-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-core\5.1.3.RELEASE\spring-core-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-jcl\5.1.3.RELEASE\spring-jcl-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-expression\5.1.3.RELEASE\spring-expression-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-web\5.1.3.RELEASE\spring-web-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-webmvc\5.1.3.RELEASE\spring-webmvc-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\20996\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\20996\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar;C:\Users\20996\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;C:\Users\20996\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.1\javax.servlet.jsp-api-2.3.1.jar;C:\Users\20996\.m2\repository\org\springframework\spring-tx\5.1.3.RELEASE\spring-tx-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-aspects\5.1.3.RELEASE\spring-aspects-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\aspectj\aspectjweaver\1.9.2\aspectjweaver-1.9.2.jar;C:\Users\20996\.m2\repository\org\springframework\spring-orm\5.1.3.RELEASE\spring-orm-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\springframework\spring-jdbc\5.1.3.RELEASE\spring-jdbc-5.1.3.RELEASE.jar;C:\Users\20996\.m2\repository\org\hibernate\hibernate-core\5.3.7.Final\hibernate-core-5.3.7.Final.jar;C:\Users\20996\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\20996\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\20996\.m2\repository\org\javassist\javassist\3.23.1-GA\javassist-3.23.1-GA.jar;C:\Users\20996\.m2\repository\net\bytebuddy\byte-buddy\1.8.17\byte-buddy-1.8.17.jar;C:\Users\20996\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\20996\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\20996\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\20996\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\20996\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\20996\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\20996\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\20996\.m2\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;C:\Users\20996\.m2\repository\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar;C:\Users\20996\.m2\repository\javax\servlet\jsp\jsp-api\2.2\jsp-api-2.2.jar;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\configuration\org.eclipse.osgi\305\0\.cp;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE\configuration\org.eclipse.osgi\303\0\.cp, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Shanghai, os.name=Windows 10, java.vm.specification.version=1.8, user.country=CN, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jre1.8.0_192\bin, sun.java.command=org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 63263 -testLoaderClass org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader -loaderpluginname org.eclipse.jdt.junit5.runtime -test cn.lyl.ssh.test.test:test, sun.cpu.endian=little, user.home=C:\Users\20996, user.language=zh, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jre1.8.0_192, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, sun.boot.class.path=C:\Program Files\Java\jre1.8.0_192\lib\resources.jar;C:\Program Files\Java\jre1.8.0_192\lib\rt.jar;C:\Program Files\Java\jre1.8.0_192\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_192\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_192\lib\jce.jar;C:\Program Files\Java\jre1.8.0_192\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_192\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_192\classes, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_192-b12, user.name=20996, path.separator=;, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_192\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=GBK, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.classLoaders=[sun.misc.Launcher$AppClassLoader@6d03e736], hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\20996\AppData\Local\Temp\, java.version=1.8.0_192, user.dir=C:\Users\20996\git\ssh\ssh, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@27ace0b1, java.library.path=C:\Program Files\Java\jre1.8.0_192\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_192/bin/server;C:/Program Files/Java/jre1.8.0_192/bin;C:/Program Files/Java/jre1.8.0_192/lib/amd64;D:\liuyiling\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\³£ÓÃÈí¼þ°²×°Â·¾¶\Microsoft VS Code\bin;%JAVA_H;ME%\bin;C:\Program Files\Java\jdk1.8.0_192\jre\bin;D:\Javaliuyiling\apache-maven-3.6.0\bin;"D:\Javaliuyiling\apache-tomcat-8.5.38\lib;D:\Javaliuyiling\apache-tomcat-8.5.38\bin";C:\Program Files\Git\bin;D:\Python\Scripts\;D:\Python\;C:\Users\20996\AppData\Local\Microsoft\WindowsApps;D:\³£ÓÃÈí¼þ°²×°Â·¾¶\Microsoft VS Code\bin;C:\Users\20996\AppData\Local\GitHubDesktop\bin;C:\Users\20996\Desktop\ÁõÒÝÁè\sts-bundle\sts-3.9.7.RELEASE;;., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.192-b12, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge164a27outfe12qh2tg|909217e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge164a27outfe12qh2tg|909217e, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/ssh, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 20, maxStatementsPerConnection -> 5, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ], java.ext.dirs=C:\Program Files\Java\jre1.8.0_192\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.io.unicode.encoding=UnicodeLittle, java.class.version=52.0}
+2019-04-14 19:59:35,560 DEBUG Skipping JACC integration as it was not enabled
+2019-04-14 19:59:35,561 DEBUG Instantiated session factory
+2019-04-14 19:59:35,561 DEBUG Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@27c04377] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@7aa9e414]
+2019-04-14 19:59:35,605 DEBUG Not known whether passed class name [cn.lyl.ssh.model.Topic] is safe
+2019-04-14 19:59:35,605 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.Topic
+2019-04-14 19:59:35,623 DEBUG Not known whether passed class name [cn.lyl.ssh.model.Topic] is safe
+2019-04-14 19:59:35,623 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.Topic
+2019-04-14 19:59:35,811 DEBUG Not known whether passed class name [cn.lyl.ssh.model.Comment] is safe
+2019-04-14 19:59:35,811 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.Comment
+2019-04-14 19:59:35,812 DEBUG Not known whether passed class name [cn.lyl.ssh.model.Comment] is safe
+2019-04-14 19:59:35,812 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.Comment
+2019-04-14 19:59:35,828 DEBUG Not known whether passed class name [cn.lyl.ssh.model.User] is safe
+2019-04-14 19:59:35,828 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.User
+2019-04-14 19:59:35,828 DEBUG Not known whether passed class name [cn.lyl.ssh.model.User] is safe
+2019-04-14 19:59:35,828 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.lyl.ssh.model.User
+2019-04-14 19:59:35,851 DEBUG Static SQL for entity: cn.lyl.ssh.model.Topic
+2019-04-14 19:59:35,851 DEBUG  Version select: select PID from TOPIC where PID =?
+2019-04-14 19:59:35,851 DEBUG  Snapshot select: select topic_.PID, topic_.CONTENT as CONTENT2_1_, topic_.PRAISE as PRAISE3_1_, topic_.UserId as UserId4_1_ from TOPIC topic_ where topic_.PID=?
+2019-04-14 19:59:35,851 DEBUG  Insert 0: insert into TOPIC (CONTENT, PRAISE, UserId, PID) values (?, ?, ?, ?)
+2019-04-14 19:59:35,851 DEBUG  Update 0: update TOPIC set CONTENT=?, PRAISE=?, UserId=? where PID=?
+2019-04-14 19:59:35,851 DEBUG  Delete 0: delete from TOPIC where PID=?
+2019-04-14 19:59:35,851 DEBUG  Identity insert: insert into TOPIC (CONTENT, PRAISE, UserId) values (?, ?, ?)
+2019-04-14 19:59:35,872 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56637cff]
+2019-04-14 19:59:35,873 DEBUG Visiting attribute path : content
+2019-04-14 19:59:35,873 DEBUG Visiting attribute path : praise
+2019-04-14 19:59:35,873 DEBUG Visiting attribute path : user
+2019-04-14 19:59:35,876 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6cf0a747]
+2019-04-14 19:59:35,877 DEBUG Visiting attribute path : user.username
+2019-04-14 19:59:35,877 DEBUG Visiting attribute path : user.password
+2019-04-14 19:59:35,877 DEBUG Visiting attribute path : user.sex
+2019-04-14 19:59:35,877 DEBUG Visiting attribute path : user.birthday
+2019-04-14 19:59:35,877 DEBUG Visiting attribute path : user.img
+2019-04-14 19:59:35,878 DEBUG Building LoadPlan...
+2019-04-14 19:59:35,889 DEBUG processing queryspace <gen:0>
+2019-04-14 19:59:35,894 DEBUG LoadPlan(entity=cn.lyl.ssh.model.Topic)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.Topic, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.Topic)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:1>, path=cn.lyl.ssh.model.Topic.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.Topic)
+          - SQL table alias mapping - topic0_
+          - alias suffix - 0_
+          - suffixed key columns - {PID1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cn.lyl.ssh.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_2_1_}
+
+2019-04-14 19:59:35,897 DEBUG Static select for entity cn.lyl.ssh.model.Topic [NONE]: select topic0_.PID as PID1_1_0_, topic0_.CONTENT as CONTENT2_1_0_, topic0_.PRAISE as PRAISE3_1_0_, topic0_.UserId as UserId4_1_0_, user1_.ID as ID1_2_1_, user1_.USERNAME as USERNAME2_2_1_, user1_.PASSWORD as PASSWORD3_2_1_, user1_.SEX as SEX4_2_1_, user1_.BIRTHDAY as BIRTHDAY5_2_1_, user1_.IMG as IMG6_2_1_ from TOPIC topic0_ left outer join USER user1_ on topic0_.UserId=user1_.ID where topic0_.PID=?
+2019-04-14 19:59:35,897 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@74e6094b]
+2019-04-14 19:59:35,897 DEBUG Visiting attribute path : content
+2019-04-14 19:59:35,897 DEBUG Visiting attribute path : praise
+2019-04-14 19:59:35,897 DEBUG Visiting attribute path : user
+2019-04-14 19:59:35,897 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5cf3157b]
+2019-04-14 19:59:35,897 DEBUG Visiting attribute path : user.username
+2019-04-14 19:59:35,897 DEBUG Visiting attribute path : user.password
+2019-04-14 19:59:35,897 DEBUG Visiting attribute path : user.sex
+2019-04-14 19:59:35,897 DEBUG Visiting attribute path : user.birthday
+2019-04-14 19:59:35,897 DEBUG Visiting attribute path : user.img
+2019-04-14 19:59:35,897 DEBUG Building LoadPlan...
+2019-04-14 19:59:35,898 DEBUG processing queryspace <gen:0>
+2019-04-14 19:59:35,898 DEBUG LoadPlan(entity=cn.lyl.ssh.model.Topic)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.Topic, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.Topic)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:1>, path=cn.lyl.ssh.model.Topic.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.Topic)
+          - SQL table alias mapping - topic0_
+          - alias suffix - 0_
+          - suffixed key columns - {PID1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cn.lyl.ssh.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_2_1_}
+
+2019-04-14 19:59:35,898 DEBUG Static select for entity cn.lyl.ssh.model.Topic [READ]: select topic0_.PID as PID1_1_0_, topic0_.CONTENT as CONTENT2_1_0_, topic0_.PRAISE as PRAISE3_1_0_, topic0_.UserId as UserId4_1_0_, user1_.ID as ID1_2_1_, user1_.USERNAME as USERNAME2_2_1_, user1_.PASSWORD as PASSWORD3_2_1_, user1_.SEX as SEX4_2_1_, user1_.BIRTHDAY as BIRTHDAY5_2_1_, user1_.IMG as IMG6_2_1_ from TOPIC topic0_ left outer join USER user1_ on topic0_.UserId=user1_.ID where topic0_.PID=?
+2019-04-14 19:59:35,910 DEBUG Static select for action ACTION_MERGE on entity cn.lyl.ssh.model.Topic: select topic0_.PID as PID1_1_0_, topic0_.CONTENT as CONTENT2_1_0_, topic0_.PRAISE as PRAISE3_1_0_, topic0_.UserId as UserId4_1_0_ from TOPIC topic0_ where topic0_.PID=?
+2019-04-14 19:59:35,911 DEBUG Static select for action ACTION_REFRESH on entity cn.lyl.ssh.model.Topic: select topic0_.PID as PID1_1_0_, topic0_.CONTENT as CONTENT2_1_0_, topic0_.PRAISE as PRAISE3_1_0_, topic0_.UserId as UserId4_1_0_ from TOPIC topic0_ where topic0_.PID=?
+2019-04-14 19:59:35,911 DEBUG Static SQL for entity: cn.lyl.ssh.model.Comment
+2019-04-14 19:59:35,911 DEBUG  Version select: select CID from COMMENT where CID =?
+2019-04-14 19:59:35,911 DEBUG  Snapshot select: select comment_.CID, comment_.CON as CON2_0_, comment_.PRAISER as PRAISER3_0_, comment_.USERID as USERID4_0_, comment_.TOPICID as TOPICID5_0_ from COMMENT comment_ where comment_.CID=?
+2019-04-14 19:59:35,911 DEBUG  Insert 0: insert into COMMENT (CON, PRAISER, USERID, TOPICID, CID) values (?, ?, ?, ?, ?)
+2019-04-14 19:59:35,911 DEBUG  Update 0: update COMMENT set CON=?, PRAISER=?, USERID=?, TOPICID=? where CID=?
+2019-04-14 19:59:35,911 DEBUG  Delete 0: delete from COMMENT where CID=?
+2019-04-14 19:59:35,911 DEBUG  Identity insert: insert into COMMENT (CON, PRAISER, USERID, TOPICID) values (?, ?, ?, ?)
+2019-04-14 19:59:35,911 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6ada9c0c]
+2019-04-14 19:59:35,911 DEBUG Visiting attribute path : con
+2019-04-14 19:59:35,911 DEBUG Visiting attribute path : praiser
+2019-04-14 19:59:35,911 DEBUG Visiting attribute path : user
+2019-04-14 19:59:35,912 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6e7c351d]
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : user.username
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : user.password
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : user.sex
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : user.birthday
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : user.img
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : topic
+2019-04-14 19:59:35,912 DEBUG Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45cec376]
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : topic.content
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : topic.praise
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : topic.user
+2019-04-14 19:59:35,912 DEBUG Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@298f0a0b]
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : topic.user.username
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : topic.user.password
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : topic.user.sex
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : topic.user.birthday
+2019-04-14 19:59:35,912 DEBUG Visiting attribute path : topic.user.img
+2019-04-14 19:59:35,913 DEBUG Building LoadPlan...
+2019-04-14 19:59:35,913 DEBUG processing queryspace <gen:0>
+2019-04-14 19:59:35,913 DEBUG LoadPlan(entity=cn.lyl.ssh.model.Comment)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.Comment, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.Comment)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:1>, path=cn.lyl.ssh.model.Comment.user)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.Topic, querySpaceUid=<gen:2>, path=cn.lyl.ssh.model.Comment.topic)
+             - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:3>, path=cn.lyl.ssh.model.Comment.topic.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.Comment)
+          - SQL table alias mapping - comment0_
+          - alias suffix - 0_
+          - suffixed key columns - {CID1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cn.lyl.ssh.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_2_1_}
+          - JOIN (JoinDefinedByMetadata(topic)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=cn.lyl.ssh.model.Topic)
+                - SQL table alias mapping - topic2_
+                - alias suffix - 2_
+                - suffixed key columns - {PID1_1_2_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:2> -> <gen:3>
+                   - EntityQuerySpaceImpl(uid=<gen:3>, entity=cn.lyl.ssh.model.User)
+                      - SQL table alias mapping - user3_
+                      - alias suffix - 3_
+                      - suffixed key columns - {ID1_2_3_}
+
+2019-04-14 19:59:35,914 DEBUG Static select for entity cn.lyl.ssh.model.Comment [NONE]: select comment0_.CID as CID1_0_0_, comment0_.CON as CON2_0_0_, comment0_.PRAISER as PRAISER3_0_0_, comment0_.USERID as USERID4_0_0_, comment0_.TOPICID as TOPICID5_0_0_, user1_.ID as ID1_2_1_, user1_.USERNAME as USERNAME2_2_1_, user1_.PASSWORD as PASSWORD3_2_1_, user1_.SEX as SEX4_2_1_, user1_.BIRTHDAY as BIRTHDAY5_2_1_, user1_.IMG as IMG6_2_1_, topic2_.PID as PID1_1_2_, topic2_.CONTENT as CONTENT2_1_2_, topic2_.PRAISE as PRAISE3_1_2_, topic2_.UserId as UserId4_1_2_, user3_.ID as ID1_2_3_, user3_.USERNAME as USERNAME2_2_3_, user3_.PASSWORD as PASSWORD3_2_3_, user3_.SEX as SEX4_2_3_, user3_.BIRTHDAY as BIRTHDAY5_2_3_, user3_.IMG as IMG6_2_3_ from COMMENT comment0_ left outer join USER user1_ on comment0_.USERID=user1_.ID left outer join TOPIC topic2_ on comment0_.TOPICID=topic2_.PID left outer join USER user3_ on topic2_.UserId=user3_.ID where comment0_.CID=?
+2019-04-14 19:59:35,914 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@31dfc6f5]
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : con
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : praiser
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : user
+2019-04-14 19:59:35,914 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@663bb8ef]
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : user.username
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : user.password
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : user.sex
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : user.birthday
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : user.img
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : topic
+2019-04-14 19:59:35,914 DEBUG Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@60e9c3a5]
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : topic.content
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : topic.praise
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : topic.user
+2019-04-14 19:59:35,914 DEBUG Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@459f703f]
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : topic.user.username
+2019-04-14 19:59:35,914 DEBUG Visiting attribute path : topic.user.password
+2019-04-14 19:59:35,915 DEBUG Visiting attribute path : topic.user.sex
+2019-04-14 19:59:35,915 DEBUG Visiting attribute path : topic.user.birthday
+2019-04-14 19:59:35,915 DEBUG Visiting attribute path : topic.user.img
+2019-04-14 19:59:35,915 DEBUG Building LoadPlan...
+2019-04-14 19:59:35,915 DEBUG processing queryspace <gen:0>
+2019-04-14 19:59:35,916 DEBUG LoadPlan(entity=cn.lyl.ssh.model.Comment)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.Comment, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.Comment)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:1>, path=cn.lyl.ssh.model.Comment.user)
+          - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.Topic, querySpaceUid=<gen:2>, path=cn.lyl.ssh.model.Comment.topic)
+             - EntityAttributeFetchImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:3>, path=cn.lyl.ssh.model.Comment.topic.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.Comment)
+          - SQL table alias mapping - comment0_
+          - alias suffix - 0_
+          - suffixed key columns - {CID1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cn.lyl.ssh.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_2_1_}
+          - JOIN (JoinDefinedByMetadata(topic)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=cn.lyl.ssh.model.Topic)
+                - SQL table alias mapping - topic2_
+                - alias suffix - 2_
+                - suffixed key columns - {PID1_1_2_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:2> -> <gen:3>
+                   - EntityQuerySpaceImpl(uid=<gen:3>, entity=cn.lyl.ssh.model.User)
+                      - SQL table alias mapping - user3_
+                      - alias suffix - 3_
+                      - suffixed key columns - {ID1_2_3_}
+
+2019-04-14 19:59:35,916 DEBUG Static select for entity cn.lyl.ssh.model.Comment [READ]: select comment0_.CID as CID1_0_0_, comment0_.CON as CON2_0_0_, comment0_.PRAISER as PRAISER3_0_0_, comment0_.USERID as USERID4_0_0_, comment0_.TOPICID as TOPICID5_0_0_, user1_.ID as ID1_2_1_, user1_.USERNAME as USERNAME2_2_1_, user1_.PASSWORD as PASSWORD3_2_1_, user1_.SEX as SEX4_2_1_, user1_.BIRTHDAY as BIRTHDAY5_2_1_, user1_.IMG as IMG6_2_1_, topic2_.PID as PID1_1_2_, topic2_.CONTENT as CONTENT2_1_2_, topic2_.PRAISE as PRAISE3_1_2_, topic2_.UserId as UserId4_1_2_, user3_.ID as ID1_2_3_, user3_.USERNAME as USERNAME2_2_3_, user3_.PASSWORD as PASSWORD3_2_3_, user3_.SEX as SEX4_2_3_, user3_.BIRTHDAY as BIRTHDAY5_2_3_, user3_.IMG as IMG6_2_3_ from COMMENT comment0_ left outer join USER user1_ on comment0_.USERID=user1_.ID left outer join TOPIC topic2_ on comment0_.TOPICID=topic2_.PID left outer join USER user3_ on topic2_.UserId=user3_.ID where comment0_.CID=?
+2019-04-14 19:59:35,916 DEBUG Static select for action ACTION_MERGE on entity cn.lyl.ssh.model.Comment: select comment0_.CID as CID1_0_0_, comment0_.CON as CON2_0_0_, comment0_.PRAISER as PRAISER3_0_0_, comment0_.USERID as USERID4_0_0_, comment0_.TOPICID as TOPICID5_0_0_ from COMMENT comment0_ where comment0_.CID=?
+2019-04-14 19:59:35,916 DEBUG Static select for action ACTION_REFRESH on entity cn.lyl.ssh.model.Comment: select comment0_.CID as CID1_0_0_, comment0_.CON as CON2_0_0_, comment0_.PRAISER as PRAISER3_0_0_, comment0_.USERID as USERID4_0_0_, comment0_.TOPICID as TOPICID5_0_0_ from COMMENT comment0_ where comment0_.CID=?
+2019-04-14 19:59:35,916 DEBUG Static SQL for entity: cn.lyl.ssh.model.User
+2019-04-14 19:59:35,916 DEBUG  Version select: select ID from USER where ID =?
+2019-04-14 19:59:35,916 DEBUG  Snapshot select: select user_.ID, user_.USERNAME as USERNAME2_2_, user_.PASSWORD as PASSWORD3_2_, user_.SEX as SEX4_2_, user_.BIRTHDAY as BIRTHDAY5_2_, user_.IMG as IMG6_2_ from USER user_ where user_.ID=?
+2019-04-14 19:59:35,916 DEBUG  Insert 0: insert into USER (USERNAME, PASSWORD, SEX, BIRTHDAY, IMG, ID) values (?, ?, ?, ?, ?, ?)
+2019-04-14 19:59:35,916 DEBUG  Update 0: update USER set USERNAME=?, PASSWORD=?, SEX=?, BIRTHDAY=?, IMG=? where ID=?
+2019-04-14 19:59:35,916 DEBUG  Delete 0: delete from USER where ID=?
+2019-04-14 19:59:35,916 DEBUG  Identity insert: insert into USER (USERNAME, PASSWORD, SEX, BIRTHDAY, IMG) values (?, ?, ?, ?, ?)
+2019-04-14 19:59:35,916 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3650d4fc]
+2019-04-14 19:59:35,916 DEBUG Visiting attribute path : username
+2019-04-14 19:59:35,916 DEBUG Visiting attribute path : password
+2019-04-14 19:59:35,916 DEBUG Visiting attribute path : sex
+2019-04-14 19:59:35,916 DEBUG Visiting attribute path : birthday
+2019-04-14 19:59:35,916 DEBUG Visiting attribute path : img
+2019-04-14 19:59:35,916 DEBUG Building LoadPlan...
+2019-04-14 19:59:35,916 DEBUG processing queryspace <gen:0>
+2019-04-14 19:59:35,917 DEBUG LoadPlan(entity=cn.lyl.ssh.model.User)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_2_0_}
+
+2019-04-14 19:59:35,917 DEBUG Static select for entity cn.lyl.ssh.model.User [NONE]: select user0_.ID as ID1_2_0_, user0_.USERNAME as USERNAME2_2_0_, user0_.PASSWORD as PASSWORD3_2_0_, user0_.SEX as SEX4_2_0_, user0_.BIRTHDAY as BIRTHDAY5_2_0_, user0_.IMG as IMG6_2_0_ from USER user0_ where user0_.ID=?
+2019-04-14 19:59:35,917 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@340a8894]
+2019-04-14 19:59:35,917 DEBUG Visiting attribute path : username
+2019-04-14 19:59:35,917 DEBUG Visiting attribute path : password
+2019-04-14 19:59:35,917 DEBUG Visiting attribute path : sex
+2019-04-14 19:59:35,917 DEBUG Visiting attribute path : birthday
+2019-04-14 19:59:35,917 DEBUG Visiting attribute path : img
+2019-04-14 19:59:35,917 DEBUG Building LoadPlan...
+2019-04-14 19:59:35,917 DEBUG processing queryspace <gen:0>
+2019-04-14 19:59:35,917 DEBUG LoadPlan(entity=cn.lyl.ssh.model.User)
+    - Returns
+       - EntityReturnImpl(entity=cn.lyl.ssh.model.User, querySpaceUid=<gen:0>, path=cn.lyl.ssh.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.lyl.ssh.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_2_0_}
+
+2019-04-14 19:59:35,917 DEBUG Static select for entity cn.lyl.ssh.model.User [READ]: select user0_.ID as ID1_2_0_, user0_.USERNAME as USERNAME2_2_0_, user0_.PASSWORD as PASSWORD3_2_0_, user0_.SEX as SEX4_2_0_, user0_.BIRTHDAY as BIRTHDAY5_2_0_, user0_.IMG as IMG6_2_0_ from USER user0_ where user0_.ID=?
+2019-04-14 19:59:35,917 DEBUG Static select for action ACTION_MERGE on entity cn.lyl.ssh.model.User: select user0_.ID as ID1_2_0_, user0_.USERNAME as USERNAME2_2_0_, user0_.PASSWORD as PASSWORD3_2_0_, user0_.SEX as SEX4_2_0_, user0_.BIRTHDAY as BIRTHDAY5_2_0_, user0_.IMG as IMG6_2_0_ from USER user0_ where user0_.ID=?
+2019-04-14 19:59:35,918 DEBUG Static select for action ACTION_REFRESH on entity cn.lyl.ssh.model.User: select user0_.ID as ID1_2_0_, user0_.USERNAME as USERNAME2_2_0_, user0_.PASSWORD as PASSWORD3_2_0_, user0_.SEX as SEX4_2_0_, user0_.BIRTHDAY as BIRTHDAY5_2_0_, user0_.IMG as IMG6_2_0_ from USER user0_ where user0_.ID=?
+2019-04-14 19:59:35,959 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:35,989 DEBUG No alter strings for table : COMMENT
+2019-04-14 19:59:35,989 DEBUG No alter strings for table : TOPIC
+2019-04-14 19:59:35,989 DEBUG No alter strings for table : USER
+2019-04-14 19:59:36,019 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:36,020 DEBUG trace com.mchange.v2.resourcepool.BasicResourcePool@4c98a6d5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@21c9c43e)
+2019-04-14 19:59:36,020 DEBUG checkinAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-14 19:59:36,021 DEBUG No JtaPlatform was specified, checking resolver
+2019-04-14 19:59:36,021 DEBUG No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2019-04-14 19:59:36,028 DEBUG Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-04-14 19:59:36,029 DEBUG Checking 0 named HQL queries
+2019-04-14 19:59:36,029 DEBUG Checking 0 named SQL queries
+2019-04-14 19:59:36,030 DEBUG Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@306f6f1d
+2019-04-14 19:59:36,030 DEBUG Registering SessionFactory: 481e1c0e-b6db-43fd-9e22-a6ab5bbf6648 (<unnamed>)
+2019-04-14 19:59:36,030 DEBUG Not binding SessionFactory to JNDI, no JNDI name configured

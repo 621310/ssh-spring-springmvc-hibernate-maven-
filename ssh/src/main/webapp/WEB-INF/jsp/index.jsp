@@ -4,8 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>首页</title>
 </head>
-<body>搭个戏台子唱出戏
+<body>
+<h2>欢迎</h2>
+<a href="#">新用户注册</a><a href="#">登陆</a>
 </body>
 </html>
