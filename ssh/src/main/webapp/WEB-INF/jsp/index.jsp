@@ -8,6 +8,7 @@
 </head>
 <body>
 <h2>欢迎</h2>
-<a href="#">新用户注册</a><a href="#">登陆</a>
+<a href="${pageContext.request.contextPath }/registview">新用户注册</a>
+<a href="${pageContext.request.contextPath }/loginview">登陆</a>
 </body>
 </html>

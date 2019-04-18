@@ -5,7 +5,9 @@ import java.lang.reflect.ParameterizedType;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+@Repository("baseDao")
 public class BaseDaoImpl<T> implements BaseDao<T> {
 
 	public Class<T> getTClass(){
